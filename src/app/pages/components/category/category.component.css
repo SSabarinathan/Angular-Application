@@ -1,0 +1,55 @@
+.mobile,.laptop{
+
+    padding: 30px;
+}
+
+.mobile
+{
+    background-color: white;
+    padding-left: 100px;
+
+}
+
+.laptop{
+    background-color: white;
+    padding-left: 400px;
+
+}
+#mobile{
+    width: 500px;
+    height: 500px;
+    border-radius: 100px;
+}
+#laptop{
+    width: 500px;
+    height: 500px;
+    border-radius: 100px;
+
+
+}
+.both{
+    display: flex;
+    padding-bottom: 30px;
+}
+button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 30px 69px;
+    border: 4px solid #a673ac;
+    border-radius: 39px;
+    background: #ffbdff;
+    background: linear, left top, left bottom;
+    background: -moz-linear-gradient(top, #ffbdff, #a673ac);
+    background: linear-gradient(to bottom, #ffbdff, #a673ac);
+    -webkit-box-shadow: #ffc5ff 0px 20px 40px 0px;
+    -moz-box-shadow: #ffc5ff 0px 20px 40px 0px;
+    box-shadow: #ffc5ff 0px 20px 40px 0px;
+    text-shadow: #77527b 1px 1px 3px;
+    font: normal normal bold 20px arial;
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 200px;
+    padding-right: 200px;
+
+}

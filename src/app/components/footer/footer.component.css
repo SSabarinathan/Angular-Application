@@ -1,0 +1,15 @@
+.footer {
+  padding-top: 100px;
+}
+li {
+  display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: teal;
+    padding: 10px;
+}
+.row{
+  display: flex;
+}

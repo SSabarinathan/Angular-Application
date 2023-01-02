@@ -1,0 +1,52 @@
+
+  input[type=submit] {
+    width: 100%;
+    background-color: sienna;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    /* border-radius: 100px; */
+    cursor: pointer;
+  }
+
+
+  form {
+    border-radius: 5px;
+    background-color: lavender;
+    padding: 20px;
+    width: 500px;
+    margin: 30px auto;
+  }
+  #registration{
+      padding-left: 700px;
+  }
+
+  input.ng-invalid.ng-touched{
+    border: red 1px solid;
+  }
+button{
+  color:teal;
+
+}
+label{
+    padding-right: 10px;
+}
+input.ng-invalid.ng-touched{
+    border: red 1px solid
+}
+.ng-valid{
+    border: green 1.5px solid;
+}
+
+
+input[type=text],[type=email],select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+

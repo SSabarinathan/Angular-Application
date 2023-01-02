@@ -1,0 +1,21 @@
+.appHeading{
+    color: teal;
+    text-align: center;
+    font-weight: 800;
+    font-size: 40px;
+    padding-top: 30px;
+
+}
+
+
+.head_position, .header_image{
+    background-color: powderblue;
+    padding: 10px;
+    display: flex;
+}
+.header_image{
+    height: 110px;
+    border-radius: 90px;
+
+
+}
