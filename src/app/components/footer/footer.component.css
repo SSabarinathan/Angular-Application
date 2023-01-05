@@ -5,11 +5,25 @@ li {
   display: flex;
 }
 
-a{
-    text-decoration: none;
-    color: teal;
-    padding: 10px;
+a {
+  text-decoration: none;
+  color: teal;
+  padding: 10px;
 }
-.row{
+.row {
   display: flex;
+}
+.company {
+  padding-left: 35px;
+}
+.gethelp {
+  padding-left: 35px;
+}
+.onlineshop {
+  padding-left: 30px;
+}
+
+.followus{
+  padding-left: 30px;
+
 }

@@ -1,24 +1,25 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+import { Data } from '../../pages.interface';
 
 @Component({
   selector: 'app-category',
   templateUrl: './category.component.html',
-  styleUrls: ['./category.component.css']
+  styleUrls: ['./category.component.css'],
 })
 export class CategoryComponent implements OnInit {
+  data: Array<Data> = [];
 
-  constructor() { }
+  constructor(private route: Router) {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  public getMobile() {
+    this.route.navigate(['/items/mobile']);
   }
 
-
-  getMobile(){
-
-
-  }
-
-  getLaptop(){
-
+ public getLaptop() {
+    this.route.navigate(['/items/laptop']);
   }
 }

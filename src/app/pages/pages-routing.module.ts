@@ -6,6 +6,8 @@ import { CartComponent } from './components/cart/cart.component';
 import { CategoryComponent } from './components/category/category.component';
 import { HomeComponent } from './components/home/home.component';
 import { OfferComponent } from './components/offer/offer.component';
+import { ItemListComponent } from './components/item-list/item-list.component';
+import { ItemComponent } from './components/item/item.component';
 
 const routes: Routes = [
   {
@@ -16,6 +18,14 @@ const routes: Routes = [
       { path: 'about', component: AboutComponent },
       { path: 'cart', component: CartComponent },
       { path: 'offer', component: OfferComponent },
+      {
+        path: 'items/:name',
+        component: ItemListComponent,
+        children: [
+          { path: 'product', component: ItemComponent },
+          // {path : '', redirectTo: 'category', pathMatch:'full'}
+        ],
+      },
       { path: '', redirectTo: 'home', pathMatch: 'full' },
     ],
   },

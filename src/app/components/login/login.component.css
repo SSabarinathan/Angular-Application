@@ -40,7 +40,7 @@ input.ng-invalid.ng-touched{
 }
 
 
-input[type=text],[type=email],select {
+input[type=text],[type=email],[type=password],select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
