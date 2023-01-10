@@ -1,6 +1,6 @@
 import { Component} from '@angular/core';
 import { PagesService } from './pages.service';
-import { Data, Laptop } from './pages.interface';
+import { Mobile, Laptop } from './pages.interface';
 import { OnInit } from '@angular/core';
 
 
@@ -14,7 +14,7 @@ import { OnInit } from '@angular/core';
 })
 export class PagesComponent implements OnInit {
   title= 'e-shopping-application';
-  data:Array<Data>=[];
+  mobile:Array<Mobile>=[];
   laptop:Array<Laptop>=[];
 
 

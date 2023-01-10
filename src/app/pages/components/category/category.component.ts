@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { Data } from '../../pages.interface';
+import { Mobile } from '../../pages.interface';
 
 @Component({
   selector: 'app-category',
@@ -9,7 +9,7 @@ import { Data } from '../../pages.interface';
   styleUrls: ['./category.component.css'],
 })
 export class CategoryComponent implements OnInit {
-  data: Array<Data> = [];
+  mobile: Array<Mobile> = [];
 
   constructor(private route: Router) {}
 

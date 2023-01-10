@@ -1,212 +1,276 @@
 {
-  "data": [
+  "mobile": [
     {
+      "id": 1,
       "modelname": "Apple-iphone 12",
       "link": "https://m.media-amazon.com/images/I/31jQ91XUDhS._SY445_SX342_QL70_FMwebp_.jpg",
-      "cost": "55,000"
+      "cost": 55000
     },
     {
+      "id": 2,
       "modelname": "Samsung M-13",
       "link": "https://m.media-amazon.com/images/I/81i1A1MgXBL._AC_UY218_.jpg",
-      "cost": "16,000"
+      "description": "(Aqua green, 4GB, 64GB Internal storage)",
+      "specs": {
+        "color": "Light green",
+        "Size": "4GB + 64GB",
+        "Style": "M13"
+      },
+      "cost": 16000
     },
     {
+      "id": 3,
       "modelname": "Google pixel V-3",
       "link": "https://m.media-amazon.com/images/I/61znAJyslHL._SX569_.jpg",
-      "cost": "56,000"
+      "cost": 56000
     },
     {
+      "id": 4,
       "modelname": "Oneplus NT-2",
       "link": "https://m.media-amazon.com/images/I/61ahn9N38zL._AC_UY218_.jpg",
-      "cost": "28,000"
+      "cost": 28000
     },
     {
+      "id": 5,
       "modelname": "Tecno S33",
       "link": "https://m.media-amazon.com/images/I/91BSflfKpJL._SX679_.jpg",
-      "cost": "18,000"
+      "cost": 18000
     },
     {
+      "id": 6,
       "modelname": "Apple iphone-14",
       "link": "https://m.media-amazon.com/images/I/619f09kK7tL._AC_UY218_.jpg",
-      "cost": "1,04,990"
+      "cost": 104990
     },
     {
+      "id": 7,
       "modelname": "Apple iPhone-14 Pro",
       "link": "https://m.media-amazon.com/images/I/61lKQWyMdDL._AC_UY218_.jpg",
-      "cost": "1,78,000"
+      "cost": 178000
     },
     {
+      "id": 8,
       "modelname": "Google pixel-6a",
       "link": "https://m.media-amazon.com/images/I/51+p2QXs81L._AC_UY218_.jpg",
-      "cost": "26,999"
+      "cost": 26999
     },
     {
+      "id": 9,
       "modelname": "Google pixel-6pro",
       "link": "https://m.media-amazon.com/images/I/8116d+CC3yL._AC_UY218_.jpg",
-      "cost": "56,000"
+      "cost": 56000
     },
     {
+      "id": 10,
       "modelname": "Samsung s9",
       "link": "https://m.media-amazon.com/images/I/71ghatBTTSL._AC_UY218_.jpg",
-      "cost": "34,500"
+      "cost": 34500
     },
     {
+      "id": 11,
       "modelname": "Samsung m53",
       "link": "https://m.media-amazon.com/images/I/810Rscvmd4L._AC_UY218_.jpg",
-      "cost": "26,599"
+      "cost": 26599
     },
     {
+      "id": 12,
       "modelname": "Samsung s20",
       "link": "https://m.media-amazon.com/images/I/81QVLzeVckL._AC_UY218_.jpg",
-      "cost": "38,999"
+      "cost": 38999
     },
     {
+      "id": 14,
       "modelname": "Samsung s21",
       "link": "https://m.media-amazon.com/images/I/91ZgUXOWF4L._AC_UY218_.jpg",
-      "cost": "59,999"
+      "cost": 59999
     },
     {
+      "id": 15,
       "modelname": "OnePlus 10pro",
       "link": "https://m.media-amazon.com/images/I/618hqM-yxtL._AC_UY218_.jpg",
-      "cost": "66,999"
+      "cost": 66999
     },
     {
+      "id": 16,
       "modelname": "OnePlus 10r",
       "link": "https://m.media-amazon.com/images/I/716uVx3Wr5L._AC_UY218_.jpg",
-      "cost": "34,900"
+      "cost": 34900
     },
     {
+      "id": 17,
       "modelname": "Redmi a1",
       "link": "https://m.media-amazon.com/images/I/81UT07JsBqL._AC_UY218_.jpg",
-      "cost": "8,999"
+      "cost": 8999
     },
     {
+      "id": 18,
       "modelname": "Redmi 10Power",
       "link": "https://m.media-amazon.com/images/I/81OZGH4fZiL._AC_UY218_.jpg",
-      "cost": "19,999"
+      "cost": 19999
     },
     {
+      "id": 19,
       "modelname": "Apple 14pro-max",
       "link": "https://m.media-amazon.com/images/I/61XO4bORHUL._AC_UY218_.jpg",
-      "cost": "1,39,000"
+      "cost": 139000
     }
   ],
   "laptop": [
     {
+      "id": 1,
       "modelname": "Apple laptop a2",
       "link": "https://m.media-amazon.com/images/I/719C6bJv8jL._AC_UY218_.jpg",
-      "cost": "1,55,000"
+      "cost": 155000
     },
     {
+      "id": 2,
       "modelname": "Apple laptop 16",
       "link": "https://m.media-amazon.com/images/I/61Y30DpqRVL._AC_UY218_.jpg",
-      "cost": "60,999"
+      "cost": 60999
     },
     {
+      "id": 3,
       "modelname": "Samsung book-2",
       "link": "https://m.media-amazon.com/images/I/61q6ZSqYmcL._AC_UY218_.jpg",
-      "cost": "56,099"
+      "cost": 56099
     },
     {
+      "id": 4,
       "modelname": "HP pavilion",
       "link": "https://m.media-amazon.com/images/I/71VlaIUD10L._AC_UY218_.jpg",
-      "cost": "78,099"
+      "cost": 78099
     },
     {
+      "id": 5,
       "modelname": "Dell g-15",
       "link": "https://m.media-amazon.com/images/I/610sreKWXlL._AC_UY218_.jpg",
-      "cost": "68,099"
+      "cost": 68099
     },
     {
+      "id": 6,
       "modelname": "Acer Predator-500",
       "link": "https://m.media-amazon.com/images/I/81oz+NZ4QLL._AC_UY218_.jpg",
-      "cost": "1,68,000"
+      "cost": 168000
     },
     {
+      "id": 7,
       "modelname": "Asus TUF-15",
       "link": "https://m.media-amazon.com/images/I/91zVSkGGZbS._AC_UY218_.jpg",
-      "cost": "98,000"
+      "cost": 98000
     },
     {
+      "id": 8,
       "modelname": "Samsung-Book2",
       "link": "https://m.media-amazon.com/images/I/61wqYsqU6AL._AC_UY218_.jpg",
-      "cost": "68,000"
+      "cost": 68000
     },
     {
+      "id": 9,
       "modelname": "Samsung-NP750",
       "link": "https://m.media-amazon.com/images/I/61wqYsqU6AL._AC_UY218_.jpg",
-      "cost": "74,099"
+      "cost": 74099
     },
     {
+      "id": 11,
       "modelname": "Acer-vreo",
       "link": "https://m.media-amazon.com/images/I/81z+cWe0dbL._AC_UY218_.jpg",
-      "cost": "64,999"
+      "cost": 64999
     },
     {
+      "id": 12,
       "modelname": "MSI-63",
       "link": "https://m.media-amazon.com/images/I/71BCum1YVzL._AC_UY218_.jpg",
-      "cost": "82,999"
+      "cost": 82999
     },
     {
+      "id": 13,
       "modelname": "Acer-Helious",
       "link": "https://m.media-amazon.com/images/I/71Xk9qt6IwL._AC_UY218_.jpg",
-      "cost": "99,999"
+      "cost": 99999
     },
     {
+      "id": 14,
       "modelname": "Asus-ROG15",
       "link": "https://m.media-amazon.com/images/I/716tZo4diQL._AC_UY218_.jpg",
-      "cost": "2,10,000"
+      "cost": 210000
     },
     {
+      "id": 15,
       "modelname": "Dell -X15",
       "link": "https://m.media-amazon.com/images/I/61Zwojyjm5L._AC_UY218_.jpg",
-      "cost": "1,56,000"
+      "cost": 156000
     },
     {
+      "id": 15,
       "modelname": "Lenovo legion",
       "link": "https://m.media-amazon.com/images/I/61CowGtbOIL._AC_UY218_.jpg",
-      "cost": "90,999"
+      "cost": 90999
     },
     {
+      "id": 17,
       "modelname": "MSI GS66-gaming",
       "link": "https://m.media-amazon.com/images/I/71ZygtZ0V9L._AC_UY218_.jpg",
-      "cost": "2,34,442"
+      "cost": 234442
     },
     {
+      "id": 18,
       "modelname": "MSI Z16P",
       "link": "https://m.media-amazon.com/images/I/71cMreMRUfL._AC_UY218_.jpg",
-      "cost": "1,20,000"
+      "cost": 120000
     },
     {
+      "id": 19,
       "modelname": "Asus -SE17",
       "link": "https://m.media-amazon.com/images/I/711DhM7I+4L._AC_UY218_.jpg",
-      "cost": "98,999"
+      "cost": 98999
     },
     {
+      "id": 20,
       "modelname": "Acer H-300",
       "link": "https://m.media-amazon.com/images/I/71Xk9qt6IwL._AC_UY218_.jpg",
-      "cost": "88,900"
+      "cost": 88900
     },
     {
+      "id": 21,
       "modelname": "Asus rog-15",
       "link": "https://m.media-amazon.com/images/I/716tZo4diQL._AC_UY218_.jpg",
-      "cost": "2,89,000"
+      "cost": 289000
     },
     {
+      "id": 22,
       "modelname": "HP 15-s",
       "link": "https://m.media-amazon.com/images/I/91oF9q-jE5L._AC_UY218_.jpg",
-      "cost": "54,000"
+      "cost": 54000
     },
     {
+      "id": 23,
       "modelname": "HP AMD-15",
       "link": "https://m.media-amazon.com/images/I/91gTXKjK8bL._AC_UY218_.jpg",
-      "cost": "60,000"
+      "cost": 60000
     },
     {
+      "id": 24,
       "modelname": "Dell Inspiron-7420",
       "link": "https://m.media-amazon.com/images/I/51Fymm1YtAL._AC_UY218_.jpg",
-      "cost": "72,000"
+      "cost": 72000
     }
   ],
-  "userDetails": []
+  "userDetails": [
+    {
+      "firstName": "Sabarinathan",
+      "lastName": null,
+      "email": "ssabarinathan200109@gmail.com",
+      "password": "1245658",
+      "id": 1
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "modelname": "Apple-iphone 12",
+      "link": "https://m.media-amazon.com/images/I/31jQ91XUDhS._SY445_SX342_QL70_FMwebp_.jpg",
+      "cost": 55000,
+      "quantity": 1
+    }
+  ]
 }

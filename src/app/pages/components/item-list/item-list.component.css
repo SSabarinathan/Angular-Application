@@ -1,9 +1,6 @@
 td {
   padding: 20px;
 }
-button {
-  margin-top: 100px;
-}
 .image_size {
   width: 50%;
   height: 10%;
@@ -21,7 +18,7 @@ button {
   margin: 0 0 1rem;
   padding-top: 15px;
 
-  /* border-radius: 50px; */
+  border-radius: 10px;
 }
 .full {
   padding-left: 200px;
@@ -32,9 +29,18 @@ button {
   width: 50px;
   border-radius: 40px;
 }
-.cart{
+.sample{
+  background-color: green;
+}
+.cart {
   padding-left: 80px;
   padding-right: 60px;
+  border-radius: 40px;
+}
+.btn {
+  width: -webkit-fill-available;
+  margin: 7px;
+  height: 50px;
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {

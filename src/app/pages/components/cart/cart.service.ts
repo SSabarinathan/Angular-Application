@@ -1,18 +1,36 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CartService {
-  public cartItem:any=[];
-  public productList=new BehaviorSubject< any>([])
+  public url = 'http://localhost:3000/cart';
 
-  constructor() { }
-  getProducts(){
-    return this.productList.asObservable();
+  constructor(private http: HttpClient) {}
+
+  addtoCart(product: any) {
+    return this.http.post(this.url, product);
   }
-  setProduct(){
-    
+
+  getCart() {
+    return this.http.get(this.url);
+  }
+
+  getCartItem(id: number) {
+    return this.http.get(`${this.url}/${id}`);
+  }
+
+  updateCart(data: any) {
+    return this.http.put(`${this.url}/${data.id}`, data);
+  }
+
+  buyProduct(id: any) {
+    return this.http.delete(`${this.url}/${id}`);
+  }
+
+  removeProduct(id: any) {
+    return this.http.delete(`${this.url}/${id}`);
   }
 }

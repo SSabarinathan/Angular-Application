@@ -18,14 +18,8 @@ const routes: Routes = [
       { path: 'about', component: AboutComponent },
       { path: 'cart', component: CartComponent },
       { path: 'offer', component: OfferComponent },
-      {
-        path: 'items/:name',
-        component: ItemListComponent,
-        children: [
-          { path: 'product', component: ItemComponent },
-          // {path : '', redirectTo: 'category', pathMatch:'full'}
-        ],
-      },
+      { path: 'items/:name', component: ItemListComponent },
+      { path: 'item', component: ItemComponent },
       { path: '', redirectTo: 'home', pathMatch: 'full' },
     ],
   },

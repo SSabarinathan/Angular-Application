@@ -1,11 +1,8 @@
-h1{
+/* h1{
     padding: 70px;
 }
 .card{
-    height: 50vh;
-    margin: 55px;
-    padding: 25px;
-    border-radius: 40px;
+
     background-color: lavender;
 
 }
@@ -15,5 +12,120 @@ h1{
     left:50%;
     transform: translate(-50%,-50%);
     text-align: center;
+} */
+
+.buy,.remove{
+  color: purple;
+
+
+}
+.remove{
+  /* background: red; */
+  color: white;
+  margin: 10px;
+  background: red;
+  /* height: 30px; */
+  border-radius: 50px;
+
+}
+.buy{
+  margin: 10px;
+
+
+
 }
 
+
+td {
+    padding: 20px;
+  }
+ 
+  .image_size {
+    width: 50%;
+    height: 10%;
+  }
+  .card-img-top {
+    /* margin: auto; */
+    height: 60%;
+    width: 60%;
+  }
+  .card-deck {
+    margin: 0 -15px;
+  }
+
+  .card-deck .card {
+    margin: 0 0 1rem;
+    padding-top: 15px;
+    border-radius: 50px;
+    padding-bottom: 20px;
+
+  }
+  .full {
+    padding-left: 200px;
+  }
+  .back_button {
+    background-color: purple;
+    color: white;
+    width: 50px;
+    border-radius: 40px;
+  }
+  .cart{
+    padding-left: 80px;
+    padding-right: 60px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .card-deck .card {
+      -ms-flex: 0 0 48.7%;
+      flex: 0 0 48.7%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .card-deck .card {
+      -ms-flex: 0 0 32%;
+      flex: 0 0 32%;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .card-deck .card {
+      -ms-flex: 0 0 24%;
+      flex: 0 0 24%;
+    }
+  }

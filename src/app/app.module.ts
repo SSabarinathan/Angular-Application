@@ -14,6 +14,7 @@ import { AboutComponent } from './pages/components/about/about.component';
 import { CartComponent } from './pages/components/cart/cart.component';
 import { OfferComponent } from './pages/components/offer/offer.component';
 import { SignupComponent } from './components/login/login.component';
+import { mainModule } from 'process';
 
 
 @NgModule({
@@ -39,3 +40,7 @@ import { SignupComponent } from './components/login/login.component';
     bootstrap: [AppComponent],
 })
 export class AppModule { }
+//git push cmds
+// git add .
+// git commit -m""
+// git push -u origin main

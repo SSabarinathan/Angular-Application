@@ -1,22 +1,20 @@
-export interface Data{
-    modelname: string,
-    link: string,
-    cost: string
-
+export interface Mobile  {
+  modelname: string;
+  link: string;
+  cost: number;
+  id: number;
+  quantity:number;
+  specs:string
 }
 
-export interface Laptop{
-    modelname: string,
-    link: string,
-    cost: string
+export interface Laptop {
+  modelname: string;
+  link: string;
+  cost: number;
+  quantity:number;
+  id:number;
+  specs:string
+
+
 
 }
-// export interface Data1{
-//     modelname: string,
-//     link: string,
-//     cost: string
-
-// }
-
-
-

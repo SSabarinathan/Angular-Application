@@ -11,7 +11,7 @@ import { ItemComponent } from './components/item/item.component';
   declarations: [
     PagesComponent,
     ItemListComponent,
-    ItemComponent
+    ItemComponent,
   ],
   imports: [
     CommonModule,
