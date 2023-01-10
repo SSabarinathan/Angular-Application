@@ -5,15 +5,26 @@ td {
   width: 50%;
   height: 10%;
 }
-.card-img-top {
-  /* margin: auto; */
-  height: 60%;
+.card-img-mob {
+  height: -webkit-fill-available;
+  width: 60%;
+}
+.card-img-lap {
+  height: 80%;
   width: 60%;
 }
 .card-deck {
   margin: 0 -15px;
 }
-
+.mob-img-container {
+  height: 308px;
+}
+.lap-img-container {
+  height: 195px;
+  padding: inherit;
+  display: flex;
+  justify-content: center;
+}
 .card-deck .card {
   margin: 0 0 1rem;
   padding-top: 15px;
@@ -29,8 +40,8 @@ td {
   width: 50px;
   border-radius: 40px;
 }
-.sample{
-  background-color: green;
+.sample {
+  background-color: purple;
 }
 .cart {
   padding-left: 80px;
@@ -62,4 +73,8 @@ td {
     -ms-flex: 0 0 24%;
     flex: 0 0 24%;
   }
+}
+.buy-btn {
+  background-color: #00cf9f8a;
+  color: rebeccapurple;
 }

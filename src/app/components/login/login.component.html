@@ -1,34 +1,47 @@
-<div class="form"><br>
+<!-- <div class="form"><br>
   <h2 id="registeration"></h2>
   <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
     <label for="fname"> User Name</label>
-    <input type="text" id="fname" placeholder="Your first name" formControlName="firstName" />
-<!--
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" placeholder="Your last name" formControlName="lastName" /> -->
-
-    <label for="email">Email Id</label>
-    <input type="email" name="email" placeholder="Enter valid e-mail" id="email" formControlName="email">
-    <br>
-
+    <input type="text" id="fname" placeholder="Your first name" formControlName="Username" />
     <label for="password">Password</label>
     <input type="password" name="password" placeholder="Enter you password" id="password" formControlName="password">
     <br>
-
-
     <br>
-    <input type="submit" value="submit" id="btn">
+    <input  type="submit" disabled value="Submit" id="btn">
+  </form>
+</div> -->
 
+<form class="form-horizontal" [formGroup]="form" (ngSubmit)="OnSubmit()">
+  <div class="form-group">
+    <div>
+      <label for="text" class="control-label">Username</label>
+      <input type="text" placeholder="Enter your name" formControlName="text" />
+    </div>
+  </div>
 
+  <div class="form-group">
+    <div>
+      <label for="password" class="control-label">Password</label>
+      <input
+        type="password"
+        placeholder="Enter valid password"
+        formControlName="password"
+      />
+    </div>
+  </div>
 
+  <button type="submit" class="btn btn-primary" [disabled]="!form.valid">
+    Submit
+  </button>
+</form>
 
+<!-- <button (click)="onSubmit()"  >Submit</button> -->
 
-    <!-- <label for="country">Country</label>
+<!-- <label for="country">Country</label>
     <select id="country" formControlName="country">
       <option value="India">India</option>
       <option value="Other Country">Other Country</option>
     </select><br><br> -->
-
 
 <!--
     <label for="gender">Gender </label><br>
@@ -39,26 +52,10 @@
     <input type="radio" id="others" value="others" formControlName="gender">
     <label for="others">Others</label><br><br> -->
 
-
-
-
-  </form>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--
+ <div class="signup">
+  <button (click)="signup()">Sign-up</button>
+</div> -->
 
 <!--
 

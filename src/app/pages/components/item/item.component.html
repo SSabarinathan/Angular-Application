@@ -1,6 +1,15 @@
-<div class="purchasedItem">
-    <h3>{{itemData.modelname}}</h3>
-    <img [src]="itemData.link" >
-    <h4>{{itemData.specs}}</h4>
-    <h4>{{itemData.cost}}</h4>
+<div class="buyBox">
+  <div class="purchasedItem">
+    <h2>Woww!! You purchased {{ itemData.modelname }}!!
+    </h2>
+    <img [src]="itemData.link" /><br /><br />
+    <h3>{{ itemData.modelname }}</h3>
+
+    <h4>{{ itemData.cost|currency : "INR" }}</h4>
+
+    <h4>{{ itemData.description }}</h4>
+    <h4>Colour: {{ itemData.specs.color }}</h4>
+    <h4>Storage: {{ itemData.specs.Size }}</h4>
+    <h4>Style: {{ itemData.specs.Style }}</h4>
+  </div>
 </div>

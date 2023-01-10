@@ -1,11 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
 })
 export class PagesService {
+
+
+
+
   public selectedProduct = new BehaviorSubject({});
 
   public baseUrl = 'http://localhost:3000';
@@ -16,6 +21,8 @@ export class PagesService {
     'http://localhost:3000/mobile';
 
   constructor(private http: HttpClient) {}
+
+
 
   getMobile() {
     return this.http.get(this.url);

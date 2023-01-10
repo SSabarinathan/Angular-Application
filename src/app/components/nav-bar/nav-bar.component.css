@@ -1,20 +1,16 @@
 .navbar_link {
   list-style: none;
   display: flex;
-  background-color: plum;
+  background-color: purple;
   padding: 25px;
   font-weight: 950;
-  font-style: italic;
-
+  font-size: 18px;
 }
 a {
   text-decoration: none;
-  color: rebeccapurple;
+  color: white;
   padding-left: 80px;
-
-
 }
-.login{
-    padding-left: 1100px;
-
+.login {
+  padding-left: 1100px;
 }

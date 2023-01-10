@@ -71,12 +71,12 @@ export class ItemListComponent implements OnInit {
   private updateCart(data: any, quantity: number) {
     this.pageService.getItemData(this.category, data.id).subscribe({
       next: (res: any) => {
-        data.quantity = quantity + 1;
-        data.cost = data.quantity * res.cost;
-        console.log(data);
-        this.cartService.updateCart(data).subscribe({
+        quantity++;
+        const cost = quantity * res.cost;
+        this.cartService.updateCart({ ...data, cost, quantity }).subscribe({
           next: (res) => {
             console.log('Successfully updated..');
+            this.navigateToCart();
           },
         });
       },
@@ -88,8 +88,13 @@ export class ItemListComponent implements OnInit {
     this.cartService.addtoCart(data).subscribe({
       next: (res2: any) => {
         console.log(res2);
+        this.navigateToCart();
       },
     });
+  }
+
+  public navigateToCart() {
+    this.router.navigate(['cart']);
   }
 
   buyProduct(data: any) {

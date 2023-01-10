@@ -15,6 +15,8 @@ import { CartComponent } from './pages/components/cart/cart.component';
 import { OfferComponent } from './pages/components/offer/offer.component';
 import { SignupComponent } from './components/login/login.component';
 import { mainModule } from 'process';
+import { PagesService } from './pages/pages.service';
+
 
 
 @NgModule({
@@ -28,7 +30,7 @@ import { mainModule } from 'process';
         AboutComponent,
         CartComponent,
         OfferComponent,
-        SignupComponent
+        SignupComponent,
     ],
     imports: [
         BrowserModule,
@@ -36,11 +38,12 @@ import { mainModule } from 'process';
         ReactiveFormsModule,
         HttpClientModule
     ],
-    providers: [],
+    providers: [PagesService],
     bootstrap: [AppComponent],
 })
 export class AppModule { }
 //git push cmds
+
 // git add .
 // git commit -m""
 // git push -u origin main
