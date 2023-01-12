@@ -16,6 +16,7 @@
     <div>
       <label for="text" class="control-label">Username</label>
       <input type="text" placeholder="Enter your name" formControlName="text" />
+      <small *ngIf="!this.form.get('text')?.valid&&form.get('text')?.touched">**Enter correct username!!</small>
     </div>
   </div>
 
@@ -23,17 +24,15 @@
     <div>
       <label for="password" class="control-label">Password</label>
       <input
-        type="password"
-        placeholder="Enter valid password"
-        formControlName="password"
-      />
+        type="password" placeholder="Enter valid password" formControlName="password" />
+        <small *ngIf="!this.form.get('password')?.valid&&form.get('password')?.touched">**Password Invalid!!</small>
+
     </div>
   </div>
 
   <button type="submit" class="btn btn-primary" [disabled]="!form.valid">
     Submit
   </button>
-</form>
 
 <!-- <button (click)="onSubmit()"  >Submit</button> -->
 

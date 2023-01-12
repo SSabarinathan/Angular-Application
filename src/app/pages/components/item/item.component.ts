@@ -13,6 +13,7 @@ export class ItemComponent implements OnInit {
 
   ngOnInit(): void {
     this.getItemData();
+
   }
 
   private getItemData() {
@@ -22,4 +23,5 @@ export class ItemComponent implements OnInit {
       },
     });
   }
+  
 }

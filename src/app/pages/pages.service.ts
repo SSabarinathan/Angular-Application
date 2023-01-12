@@ -16,7 +16,7 @@ export class PagesService {
   public baseUrl = 'http://localhost:3000';
 
   //for mobile
-  public url: string =
+  public url =
     // 'https://run.mocky.io/v3/84861d1c-1df6-44d0-85a5-5c913fcea181';
     'http://localhost:3000/mobile';
 
@@ -30,8 +30,8 @@ export class PagesService {
   ///////////////////////////////////////////////////////////
 
   //for laptop
-  public laptop_url: string =
-    // 'https://run.mocky.io/v3/328f2094-d1fa-44da-bd1c-50f7245da1f3';
+  public laptop_url =
+    // 'https://run.mocky.io/v3/328f2094-d1fa-44da-bd1c-  50f7245da1f3';
     'http://localhost:3000/laptop';
 
   getLaptop() {
@@ -49,4 +49,5 @@ export class PagesService {
   getSelectedProduct() {
     return this.selectedProduct;
   }
+
 }

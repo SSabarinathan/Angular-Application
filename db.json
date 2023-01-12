@@ -497,57 +497,40 @@
   ],
   "userDetails": [
     {
-      "text": "sabari",
-      "password": "nathan",
+      "text": "Sabarinathan",
+      "password": "kjhsdcisdgivsd",
       "id": 1
     },
     {
-      "text": null,
-      "password": null,
+      "text": "dlfhvlsfkvhl",
+      "password": "lkddfvdv",
       "id": 2
     },
     {
-      "text": null,
-      "password": null,
+      "text": "Sabarinathan",
+      "password": "sjdvhvsdhjfsp;",
       "id": 3
     },
     {
-      "text": "Sabarinathan",
-      "password": "sdlkjnlsdjhd",
+      "text": "shgdgsdkhks",
+      "password": "sdkhjskdhfjds",
       "id": 4
     },
     {
-      "text": "Pranusha",
-      "password": "1234",
+      "text": "Sabarinathan ",
+      "password": "kas;klas;",
       "id": 5
-    }
-  ],
-  "cart": [
-    {
-      "id": 2,
-      "modelname": "Samsung M-13",
-      "link": "https://m.media-amazon.com/images/I/81i1A1MgXBL._AC_UY218_.jpg",
-      "description": "(Aqua blue, 4GB, 64GB Internal storage)",
-      "specs": {
-        "color": "Light blue",
-        "Size": "4GB + 64GB",
-        "Style": "Ms13"
-      },
-      "cost": 112000,
-      "quantity": 1
     },
     {
-      "id": 3,
-      "modelname": "Google pixel V-3",
-      "link": "https://m.media-amazon.com/images/I/61znAJyslHL._SX569_.jpg",
-      "description": "(Aqua green, 4GB, 64GB Internal storage)",
-      "specs": {
-        "color": "Light green",
-        "Size": "4GB + 64GB",
-        "Style": "AD13"
-      },
-      "cost": 56000,
-      "quantity": 1
+      "text": "lksdcclksdck",
+      "password": "ljsnvljsnvljsd",
+      "id": 6
+    },
+    {
+      "text": "dff",
+      "password": "s;dl",
+      "id": 7
     }
-  ]
+  ],
+  "cart": []
 }

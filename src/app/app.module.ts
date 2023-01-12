@@ -14,8 +14,9 @@ import { AboutComponent } from './pages/components/about/about.component';
 import { CartComponent } from './pages/components/cart/cart.component';
 import { OfferComponent } from './pages/components/offer/offer.component';
 import { SignupComponent } from './components/login/login.component';
-import { mainModule } from 'process';
 import { PagesService } from './pages/pages.service';
+import { CookieService } from 'ngx-cookie-service';
+import { AuthGuardGuard } from './components/login/guards/auth-guard.guard';
 
 
 
@@ -38,7 +39,7 @@ import { PagesService } from './pages/pages.service';
         ReactiveFormsModule,
         HttpClientModule
     ],
-    providers: [PagesService],
+    providers: [PagesService,CookieService],
     bootstrap: [AppComponent],
 })
 export class AppModule { }
@@ -47,3 +48,5 @@ export class AppModule { }
 // git add .
 // git commit -m""
 // git push -u origin main
+//-------------json initial
+//json-server --watch db.json

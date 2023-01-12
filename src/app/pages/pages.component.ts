@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { PagesService } from './pages.service';
+// import { PagesService } from './pages.service';
 import { Mobile, Laptop } from './pages.interface';
 import { OnInit } from '@angular/core';
 
@@ -9,7 +9,7 @@ import { OnInit } from '@angular/core';
   selector: 'app-pages',
   templateUrl: './pages.component.html',
   styleUrls: ['./pages.component.css'],
-  providers: [PagesService]
+  // providers: [PagesService]
 
 })
 export class PagesComponent implements OnInit {

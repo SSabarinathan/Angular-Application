@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 
 import { PagesService } from '../../pages.service';
 import { CartService } from '../cart/cart.service';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-item-list',
@@ -21,7 +22,8 @@ export class ItemListComponent implements OnInit {
     private pageService: PagesService,
     private route: ActivatedRoute,
     private router: Router,
-    private cartService: CartService
+    private cartService: CartService,
+    private cookie: CookieService
   ) {}
 
   ngOnInit(): void {
@@ -69,28 +71,32 @@ export class ItemListComponent implements OnInit {
   }
 
   private updateCart(data: any, quantity: number) {
-    this.pageService.getItemData(this.category, data.id).subscribe({
-      next: (res: any) => {
-        quantity++;
-        const cost = quantity * res.cost;
-        this.cartService.updateCart({ ...data, cost, quantity }).subscribe({
-          next: (res) => {
-            console.log('Successfully updated..');
-            this.navigateToCart();
-          },
-        });
-      },
-    });
+    if (this.checkLoginStatus()) {
+      this.pageService.getItemData(this.category, data.id).subscribe({
+        next: (res: any) => {
+          quantity++;
+          const cost = quantity * res.cost;
+          this.cartService.updateCart({ ...data, cost, quantity }).subscribe({
+            next: (res) => {
+              console.log('Successfully updated..');
+            },
+          });
+        },
+      });
+    }
+    this.navigateToCart();
   }
 
   private addCart(data: any) {
-    data.quantity = 1;
-    this.cartService.addtoCart(data).subscribe({
-      next: (res2: any) => {
-        console.log(res2);
-        this.navigateToCart();
-      },
-    });
+    if (this.checkLoginStatus()) {
+      data.quantity = 1;
+      this.cartService.addtoCart(data).subscribe({
+        next: (res2: any) => {
+          console.log(res2);
+        },
+      });
+    }
+    this.navigateToCart();
   }
 
   public navigateToCart() {
@@ -98,11 +104,17 @@ export class ItemListComponent implements OnInit {
   }
 
   buyProduct(data: any) {
-    this.pageService.updateSelectedProduct(data);
+    if (this.checkLoginStatus()) {
+      this.pageService.updateSelectedProduct(data);
+    }
     this.router.navigate(['item']);
   }
 
   goBack() {
-    this.router.navigate(['/category']);
+    this.router.navigate(['category']);
+  }
+
+  private checkLoginStatus() {
+    return this.cookie.get('Message');
   }
 }
