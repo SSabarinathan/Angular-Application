@@ -13,7 +13,15 @@
     transform: translate(-50%,-50%);
     text-align: center;
 } */
+.empty{
+  padding-left: 400px;
+}
+.empty_image{
+  width: 1000px;
+  border-radius: 30px;
+  height: 600px;
 
+}
 .buy,.remove{
   color: purple;
 
@@ -39,7 +47,7 @@
 td {
     padding: 20px;
   }
- 
+
   .image_size {
     width: 50%;
     height: 10%;

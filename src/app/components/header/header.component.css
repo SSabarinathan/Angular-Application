@@ -12,10 +12,11 @@
     background-color: powderblue;
     padding: 10px;
     display: flex;
+
 }
 .header_image{
     height: 110px;
     border-radius: 90px;
-
-
 }
+
+

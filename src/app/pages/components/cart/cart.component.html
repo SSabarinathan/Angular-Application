@@ -1,4 +1,7 @@
-<div class="goBack">
+
+
+<div *ngIf="productList.length !=0">
+   <div class="goBack">
   <button class="back_button" (click)="goBac()">Back</button>
 </div>
 <div>
@@ -27,6 +30,11 @@
     </div>
   </div>
 </div>
+</div>
+
+<div class="empty" *ngIf="productList.length ==0">
+  <img class="empty_image" src="https://i0.wp.com/www.huratips.com/wp-content/uploads/2019/04/empty-cart.png?fit=603%2C288&ssl=1" alt="Empty cart image">
+   </div>
 
 <!-- <ng-container *ngIf="true">
     <div class="card-table">
