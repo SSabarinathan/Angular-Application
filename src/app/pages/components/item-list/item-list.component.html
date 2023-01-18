@@ -1,30 +1,22 @@
 <div class="goBack">
-  <button class="back_button" (click)="goBack()">Back</button>
+  <button class="back_button" (click)="goBack()">back</button>
 </div>
 
-<div class="card-deck mt-5 full">
-  <div *ngFor="let item of data" class="card mx-5">
+<div class="card-deck mt-5 full" >
+  <div *ngFor="let item of data" class="card mx-5" >
     <div
-      [ngClass]="category === 'mobile' ? 'mob-img-container' : 'lap-img-container'"
-      class="text-center"
-    >
-      <img
-        [ngClass]="category === 'laptop' ? 'card-img-lap' : 'card-img-mob'"
-        [src]="item.link"
-        alt="Card image cap"
-      />
+      [ngClass]="category === 'mobile' ? 'mob-img-container' : 'lap-img-container'"  class="text-center" >
+      <img [ngClass]="category === 'laptop' ? 'card-img-lap' : 'card-img-mob'" [src]="item.link" alt="Card image cap"/>
     </div>
     <div class="card-body">
       <h5 class="card-title">{{ item.modelname }}</h5>
       <h3 class="cost_specifica">Price: {{ item.cost | currency : "INR" }}</h3>
       <p class="card-text">{{ item.description }}</p>
+      <p class="card-text" [ngStyle]="{color : item.stock==='available'? 'green':'red'}" >Stock: {{ item.stock }}</p>
+
       <div class="d-block">
-        <button class="btn btn-primary cart sample" (click)="addtocart(item)">
-          Add to cart
-        </button>
-        <button class="btn btn-primary cart buy-btn" (click)="buyProduct(item)">
-          Buy now
-        </button>
+        <button class="btn btn-primary cart sample" (click)="addtocart(item)">  Add to cart</button>
+        <button *ngIf="item.stock==='available'" class="btn btn-primary cart buy-btn" (click)="buyProduct(item)"> Buy now </button>
       </div>
     </div>
   </div>

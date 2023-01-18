@@ -1,0 +1,33 @@
+.error {
+  padding-left: 700px;
+  padding-top: 80px;
+}
+.number {
+  color: red;
+  font-size: 120px;
+}
+.slogan {
+  font-weight: 900;
+  font-size: 100px;
+  color: red;
+  padding-left: 500px;
+  padding-bottom: 40px;
+}
+.homePage {
+  position: absolute;
+  left: 800px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 50px;
+  border: red;
+  background-color: purple;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+
+}
+.summa{
+    padding-bottom: 70px;
+}

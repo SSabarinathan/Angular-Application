@@ -77,6 +77,8 @@ export class CartComponent implements OnInit {
 
 
   }
-
+  buyItems(){
+    this.route.navigate(['/category'])
+  }
 
 }

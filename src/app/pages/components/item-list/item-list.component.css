@@ -37,8 +37,16 @@ td {
 .back_button {
   background-color: purple;
   color: white;
-  width: 50px;
-  border-radius: 40px;
+  width: 90px;
+  border-radius: 50px;
+  border: black;
+  position: relative;
+  left: 50px;
+  top: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 10px;
+
 }
 .sample {
   background-color: purple;
@@ -47,6 +55,9 @@ td {
   padding-left: 80px;
   padding-right: 60px;
   border-radius: 40px;
+  border: beige;
+  font-weight: 900;
+
 }
 .btn {
   width: -webkit-fill-available;
@@ -77,4 +88,5 @@ td {
 .buy-btn {
   background-color: #00cf9f8a;
   color: rebeccapurple;
+  font-weight: 900;
 }
