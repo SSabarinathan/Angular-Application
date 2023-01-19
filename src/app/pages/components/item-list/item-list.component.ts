@@ -13,10 +13,9 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class ItemListComponent implements OnInit {
   data: any;
-  items: any;
-  res: any;
   cartItems = [];
   public category = '';
+  searchText:string='';
 
   constructor(
     private pageService: PagesService,
@@ -38,10 +37,17 @@ export class ItemListComponent implements OnInit {
       }
     });
   }
+   public onSearchTextEntered(searchValue:string){
+    this.searchText=searchValue;
+    console.log(this.searchText);
+
+
+
+  }
 
   private getMobileData() {
     this.pageService.getMobile().subscribe({
-      next: (res: any) => {
+      next: (res: string) => {
         this.data = res;
       },
     });
@@ -49,7 +55,7 @@ export class ItemListComponent implements OnInit {
 
   private getLaptopData() {
     this.pageService.getLaptop().subscribe({
-      next: (res1: any) => {
+      next: (res1: string) => {
         this.data = res1;
       },
     });
@@ -103,7 +109,7 @@ export class ItemListComponent implements OnInit {
     this.router.navigate(['cart']);
   }
 
-  buyProduct(data: any) {
+  buyProduct(data: string) {
     if (this.checkLoginStatus()) {
       this.pageService.updateSelectedProduct(data);
     }

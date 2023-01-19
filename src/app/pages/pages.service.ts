@@ -1,16 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, Observable } from 'rxjs';
-import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree } from '@angular/router';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class PagesService {
-
-
-
-
   public selectedProduct = new BehaviorSubject({});
 
   public baseUrl = 'http://localhost:3000';
@@ -21,8 +16,6 @@ export class PagesService {
     'http://localhost:3000/mobile';
 
   constructor(private http: HttpClient) {}
-
-
 
   getMobile() {
     return this.http.get(this.url);
@@ -42,12 +35,11 @@ export class PagesService {
     return this.http.get(`${this.baseUrl}/${category}/${id}`);
   }
 
-  updateSelectedProduct(data: any) {
+  updateSelectedProduct(data: String) {
     this.selectedProduct.next(data);
   }
 
   getSelectedProduct() {
     return this.selectedProduct;
   }
-
 }

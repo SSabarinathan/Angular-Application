@@ -1,52 +1,34 @@
 <div class="goBack">
-  <button class="back_button" (click)="goBack()">back</button>
-</div>
+  <div >
+    <button type="button"  class=" back_button " (click)="goBack()" > <-Back</button>
+  <label  [ngClass]="{changeBackground: searchText!=''}" class="searchlable" for="search">Search: </label>
+  <input  class="search"  type="search" [(ngModel)]="searchText" (input)="onSearchTextEntered(searchText)" placeholder="You can search here!!" name="search">
 
-<div class="card-deck mt-5 full" >
-  <div *ngFor="let item of data" class="card mx-5" >
+  </div>
+
+</div>
+<!-- *ngIf="searchText===''||item.modelname.toLowerCase().includes(searchText)" -->
+
+<div class="card-deck mt-5 full"  >
+  <div *ngFor="let item of data" class="card mx-5"  >
+    <div  *ngIf="searchText===''||item.modelname.toLowerCase().includes(searchText)" >
     <div
       [ngClass]="category === 'mobile' ? 'mob-img-container' : 'lap-img-container'"  class="text-center" >
       <img [ngClass]="category === 'laptop' ? 'card-img-lap' : 'card-img-mob'" [src]="item.link" alt="Card image cap"/>
+
     </div>
-    <div class="card-body">
-      <h5 class="card-title">{{ item.modelname }}</h5>
+    <div class="card-body"   >
+      <h5 class="card-title" >{{ item.modelname }}</h5>
       <h3 class="cost_specifica">Price: {{ item.cost | currency : "INR" }}</h3>
       <p class="card-text">{{ item.description }}</p>
       <p class="card-text" [ngStyle]="{color : item.stock==='available'? 'green':'red'}" >Stock: {{ item.stock }}</p>
 
       <div class="d-block">
         <button class="btn btn-primary cart sample" (click)="addtocart(item)">  Add to cart</button>
-        <button *ngIf="item.stock==='available'" class="btn btn-primary cart buy-btn" (click)="buyProduct(item)"> Buy now </button>
+        <button *ngIf="item.stock==='available'" class="btn btn-primary cart buy-btn" (click)="buyProduct(item)" > Buy now </button>
+        <button *ngIf="item.stock==='not available'" class="btn btn-primary cart not-btn">Soon it is available!!</button>
       </div>
     </div>
   </div>
 </div>
-
-<!-- <table>
-  <thead>
-    <tr>
-      <th>Model name</th>
-      <th>Image</th>
-      <th>Cost</th>
-    </tr>
-  </thead>
-  <tbody> -->
-<!-- <tr *ngFor="let items of data">
-      <td class="card-title ">{{ items.modelname }}</td>
-      <td><img  [src]="items.link" class="card-img-top image_size" /></td>
-      <td class="cost_specifica">{{ items.cost }}</td>
-      <td class="card-text">Specification of mobile yet to add</td>
-      <button (click)="productBuy()">Buy the product</button>
-
-    </tr> -->
-<!-- </tbody>
-  <tbody></tbody>
-</table> -->
-
-<!-- <div *ngFor="let items of data">
-  <td class="card-title">{{ items.modelname }}</td>
-  <td><img [src]="items.link" class="card-img-top image_size" /></td>
-  <td class="cost_specifica">{{ items.cost }}</td>
-  <td class="card-text">Specification of mobile yet to add</td>
-  <button (click)="productBuy()">Buy the product</button>
-</div> -->
+</div>

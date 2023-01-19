@@ -1,22 +1,10 @@
-<!-- <div class="form"><br>
-  <h2 id="registeration"></h2>
-  <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
-    <label for="fname"> User Name</label>
-    <input type="text" id="fname" placeholder="Your first name" formControlName="Username" />
-    <label for="password">Password</label>
-    <input type="password" name="password" placeholder="Enter you password" id="password" formControlName="password">
-    <br>
-    <br>
-    <input  type="submit" disabled value="Submit" id="btn">
-  </form>
-</div> -->
-
 <form class="form-horizontal" [formGroup]="form" (ngSubmit)="OnSubmit()">
-  <div class="form-group">
+  <div class="form-group" >
     <div>
       <label for="text" class="control-label">Username</label>
       <input type="text" placeholder="Enter your name" formControlName="text" />
-      <small *ngIf="!this.form.get('text')?.valid&&form.get('text')?.touched">**Enter correct username!!</small>
+      <small *ngIf="!this.form.get('text')?.valid && form.get('text')?.touched"
+        >**Enter correct username!!</small >
     </div>
   </div>
 
@@ -24,77 +12,20 @@
     <div>
       <label for="password" class="control-label">Password</label>
       <input
-        type="password" placeholder="Enter valid password" formControlName="password" />
-        <small *ngIf="!this.form.get('password')?.valid&&form.get('password')?.touched">**Password Invalid!!</small>
-
+        type="password"
+        placeholder="Enter valid password"
+        formControlName="password"
+      />
+      <small
+        *ngIf="
+          !this.form.get('password')?.valid && form.get('password')?.touched
+        "
+        >**Password Invalid!!</small
+      >
     </div>
   </div>
 
   <button type="submit" class="btn btn-primary" [disabled]="!form.valid">
     Submit
   </button>
-
-<!-- <button (click)="onSubmit()"  >Submit</button> -->
-
-<!-- <label for="country">Country</label>
-    <select id="country" formControlName="country">
-      <option value="India">India</option>
-      <option value="Other Country">Other Country</option>
-    </select><br><br> -->
-
-<!--
-    <label for="gender">Gender </label><br>
-    <input type="radio" id="male" value="male" formControlName="gender">
-    <label for="male"> Male </label>
-    <input type="radio" id="female" value="female" formControlName="gender">
-    <label for="female">Female</label>
-    <input type="radio" id="others" value="others" formControlName="gender">
-    <label for="others">Others</label><br><br> -->
-
-<!--
- <div class="signup">
-  <button (click)="signup()">Sign-up</button>
-</div> -->
-
-<!--
-
-
-<div class="form_box">
-
-<div class="title">Registration</div>
-
-<br />
-<form>
-  <div class="User-details">
-    <div class="input-box">
-      <span class="details"> Full name </span>
-      <input
-        type="text"
-        minlength="3"
-        placeholder="enter your good name"
-        required
-      />
-    </div><br>
-    <div class="input-box">
-      <span class="details">User name </span>
-      <input type="text" placeholder="enter your user name" required />
-    </div><br>
-    <div class="input-box">
-      <span class="details">email address </span>
-      <input type="email" placeholder="enter your valid email address" required />
-    </div><br>
-    <div class="input-box">
-      <span class="details">Password </span>
-      <input type="password" placeholder="enter your Password" required minlength="8" />
-    </div><br>
-    <div class="input-box">
-      <span class="details"> Confirm Password </span>
-      <input type="password" placeholder="Confirm your Password" required minlength="8"/><br><br>
-
-      <button class="submit">Submit</button>
-    </div><br>
-    <br />
-    <br />
-  </div>
 </form>
-</div> -->

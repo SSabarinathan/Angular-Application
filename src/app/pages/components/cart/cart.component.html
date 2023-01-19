@@ -1,6 +1,6 @@
 <div *ngIf="productList.length != 0">
   <div class="goBack">
-    <button class="back_button" (click)="goBac()">Back</button>
+    <button class="back_button" (click)="goBac()"><-</button>
   </div>
   <div>
     <div class="card-deck mt-5 full">
@@ -50,52 +50,3 @@
   </button>
 
 </div>
-
-<!-- <ng-container *ngIf="true">
-    <div class="card-table">
-        <div class="cart-product">
-            <table class="table table-response">
-                <thead>
-                    <tr>
-                        <th>S.No</th>
-                        <th>Product Name</th>
-                        <th>Product Image</th>
-                        <th>Description</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Total</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Apple</td>
-                        <td>aa</td>
-                        <td>xxxxxx</td>
-                        <td>1000</td>
-                        <td>2</td>
-                        <td>1000</td>
-                        <td><button class="btn btn-danger">Remove</button></td>
-
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</ng-container>
-
-<ng-container *ngIf="false">
-    <div class="container">
-        <div class="card">
-          <h5 class="card-title">My cart</h5>
-        </div>
-        <div class="center">
-          <h4>Your cart is empty!!</h4><br>
-          <h6>Add item to it now!</h6><br>
-          <button class="btn btn-primary">Shop Now</button>
-
-        </div>
-      </div>
-
-</ng-container> -->

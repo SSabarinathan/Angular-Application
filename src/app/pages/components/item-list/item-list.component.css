@@ -1,3 +1,23 @@
+.changeBackground{
+  background-color:orange;
+
+}
+
+.searchlable{
+  position: absolute;
+  left: 1535px;
+  top:235px;
+  font-weight: 900;
+
+}
+.search{
+  border-radius: 20px;
+  position: absolute;
+  top:230px;
+  left: 1600px;
+  background-color: lavender;
+  text-align: center;
+}
 td {
   padding: 20px;
 }
@@ -89,4 +109,10 @@ td {
   background-color: #00cf9f8a;
   color: rebeccapurple;
   font-weight: 900;
+}
+.not-btn{
+  background-color: #00cf9f8a;
+  color: red;
+  font-weight: 900;
+
 }

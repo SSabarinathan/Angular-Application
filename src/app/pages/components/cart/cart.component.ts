@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from './cart.service';
 import { Router } from '@angular/router';
-import { Laptop, Mobile } from '../../pages.interface';
 
 @Component({
   selector: 'app-cart',
@@ -10,9 +9,9 @@ import { Laptop, Mobile } from '../../pages.interface';
 })
 export class CartComponent implements OnInit {
   productList: any[];
-  updateData: any[];
-  pageService: any;
-  router: any;
+  updateData: String[];
+  pageService: String;
+  router: String;
 
   constructor(private cart: CartService, private cartService: CartService,
     private route:Router,

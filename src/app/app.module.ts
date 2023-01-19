@@ -14,9 +14,9 @@ import { AboutComponent } from './pages/components/about/about.component';
 import { CartComponent } from './pages/components/cart/cart.component';
 import { OfferComponent } from './pages/components/offer/offer.component';
 import { SignupComponent } from './components/login/login.component';
-import { PagesService } from './pages/pages.service';
 import { CookieService } from 'ngx-cookie-service';
-import { AuthGuardGuard } from './components/login/guards/auth-guard.guard';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -37,9 +37,10 @@ import { AuthGuardGuard } from './components/login/guards/auth-guard.guard';
         BrowserModule,
         AppRoutingModule,
         ReactiveFormsModule,
-        HttpClientModule
+        HttpClientModule,
+        FormsModule
     ],
-    providers: [PagesService,CookieService],
+    providers: [CookieService],
     bootstrap: [AppComponent],
 })
 export class AppModule { }
