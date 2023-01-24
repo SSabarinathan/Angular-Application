@@ -1,9 +1,5 @@
 import { Injectable } from '@angular/core';
-import {
-  CanActivate,
-  Router,
-  UrlTree
-} from '@angular/router';
+import {CanActivate,Router,UrlTree} from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 
 @Injectable({
@@ -14,6 +10,7 @@ export class AuthGuardGuard implements CanActivate {
   canActivate(): boolean | UrlTree {
     if (!!this.cookie.get('Message')) {
       return true;
+
     } else {
       this.router.navigate(['login']);
       return false;

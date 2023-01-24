@@ -30,6 +30,20 @@ export class LoginService {
   }
  user(){
   return this.cookie.get('Message');
+
  }
+//  user2(){
+//   return this.cookie.delete('Message');
+
+
+//  }
+
+
+//  logout=()=>{
+
+//    return this.cookie.delete('Message');
+
+// }
+
 
 }

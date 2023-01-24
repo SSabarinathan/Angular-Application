@@ -22,7 +22,8 @@ export class ItemListComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private cartService: CartService,
-    private cookie: CookieService
+    private cookie: CookieService,
+
   ) {}
 
   ngOnInit(): void {

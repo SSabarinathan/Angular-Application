@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import {MatIconModule} from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,12 +11,12 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/components/home/home.component';
 import { CategoryComponent } from './pages/components/category/category.component';
-import { AboutComponent } from './pages/components/about/about.component';
 import { CartComponent } from './pages/components/cart/cart.component';
 import { OfferComponent } from './pages/components/offer/offer.component';
 import { SignupComponent } from './components/login/login.component';
 import { CookieService } from 'ngx-cookie-service';
 import { FormsModule } from '@angular/forms';
+import { LogoutComponent } from './components/logout/logout.component';
 
 
 
@@ -28,17 +29,19 @@ import { FormsModule } from '@angular/forms';
         FooterComponent,
         HomeComponent,
         CategoryComponent,
-        AboutComponent,
         CartComponent,
         OfferComponent,
         SignupComponent,
+        LogoutComponent,
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         ReactiveFormsModule,
         HttpClientModule,
-        FormsModule
+        FormsModule,
+        MatIconModule
+
     ],
     providers: [CookieService],
     bootstrap: [AppComponent],

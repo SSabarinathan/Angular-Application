@@ -1,25 +1,24 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SignupComponent } from './login.component';
-import { HttpClient, HttpHandler } from '@angular/common/http';
-import { FormBuilder } from '@angular/forms';
+import { LogoutComponent } from './logout.component';
+import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 
-describe('SignupComponent', () => {
-  let component: SignupComponent;
-  let fixture: ComponentFixture<SignupComponent>;
+describe('LogoutComponent', () => {
+  let component: LogoutComponent;
+  let fixture: ComponentFixture<LogoutComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports:[RouterTestingModule],
-      declarations: [ SignupComponent ],
-      providers:[HttpClient,HttpHandler,FormBuilder]
+      declarations: [ LogoutComponent ],
     })
     .compileComponents();
   });
 
+
   beforeEach(() => {
-    fixture = TestBed.createComponent(SignupComponent);
+    fixture = TestBed.createComponent(LogoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

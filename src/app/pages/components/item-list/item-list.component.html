@@ -1,6 +1,7 @@
 <div class="goBack">
   <div >
-    <button type="button"  class=" back_button " (click)="goBack()" > <-Back</button>
+   
+    <button  type="button"  class="  back_button " (click)="goBack()" > <-Back</button>
   <label  [ngClass]="{changeBackground: searchText!=''}" class="searchlable" for="search">Search: </label>
   <input  class="search"  type="search" [(ngModel)]="searchText" (input)="onSearchTextEntered(searchText)" placeholder="You can search here!!" name="search">
 
