@@ -1,13 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  FormBuilder,
-  FormGroup,
-  Validators,
-} from '@angular/forms';
+import { FormBuilder,FormGroup,Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { CookieService } from 'ngx-cookie-service';
 
 import { LoginService } from './login.service';
-import {  Router } from '@angular/router';
-import { CookieService } from 'ngx-cookie-service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -15,7 +11,6 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class SignupComponent implements OnInit {
   title: 'ReactiveForms';
-  reactiveForm: FormGroup;
   form: FormGroup;
   cookieValue: string;
 
@@ -31,11 +26,7 @@ export class SignupComponent implements OnInit {
       text: [null, [Validators.required, Validators.minLength(6)]],
       password: [
       null,
-        [Validators.required,
-          Validators.minLength(8),
-          Validators.pattern(
-            /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])/
-          ),
+        [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])/),
         ],
       ],
     });

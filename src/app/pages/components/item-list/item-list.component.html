@@ -1,6 +1,6 @@
 <div class="goBack">
   <div >
-   
+
     <button  type="button"  class="  back_button " (click)="goBack()" > <-Back</button>
   <label  [ngClass]="{changeBackground: searchText!=''}" class="searchlable" for="search">Search: </label>
   <input  class="search"  type="search" [(ngModel)]="searchText" (input)="onSearchTextEntered(searchText)" placeholder="You can search here!!" name="search">
@@ -13,8 +13,7 @@
 <div class="card-deck mt-5 full"  >
   <div *ngFor="let item of data" class="card mx-5"  >
     <div  *ngIf="searchText===''||item.modelname.toLowerCase().includes(searchText)" >
-    <div
-      [ngClass]="category === 'mobile' ? 'mob-img-container' : 'lap-img-container'"  class="text-center" >
+    <div [ngClass]="category === 'mobile' ? 'mob-img-container' : 'lap-img-container'"  class="text-center" >
       <img [ngClass]="category === 'laptop' ? 'card-img-lap' : 'card-img-mob'" [src]="item.link" alt="Card image cap"/>
 
     </div>
@@ -27,7 +26,7 @@
       <div class="d-block">
         <button class="btn btn-primary cart sample" (click)="addtocart(item)">  Add to cart</button>
         <button *ngIf="item.stock==='available'" class="btn btn-primary cart buy-btn" (click)="buyProduct(item)" > Buy now </button>
-        <button *ngIf="item.stock==='not available'" class="btn btn-primary cart not-btn">Soon it is available!!</button>
+        <button *ngIf="item.stock==='not available'" class="btn btn-primary cart not-btn">Launching Soon!!</button>
       </div>
     </div>
   </div>

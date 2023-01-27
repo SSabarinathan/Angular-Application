@@ -15,15 +15,13 @@ export class LoginService {
 
   addUser(data: String) {
     return this.http.post(`${this.url}`, data);
-    // return this.http.delete(`${this.url}/1`)
   }
 
 
   login=()=>{
     if(this.user()){
       return true;
-
-    }
+     }
     else{
       return false;
     }
@@ -32,18 +30,5 @@ export class LoginService {
   return this.cookie.get('Message');
 
  }
-//  user2(){
-//   return this.cookie.delete('Message');
-
-
-//  }
-
-
-//  logout=()=>{
-
-//    return this.cookie.delete('Message');
-
-// }
-
 
 }

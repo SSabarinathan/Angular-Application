@@ -13,9 +13,11 @@ export class CartComponent implements OnInit {
   pageService: String;
   router: String;
 
-  constructor(private cart: CartService, private cartService: CartService,
-    private route:Router,
-    ) {}
+  constructor(
+
+    private cart: CartService, private cartService: CartService, private route:Router) {
+
+    }
   ngOnInit(): void {
     this.getCart();
 
@@ -64,7 +66,7 @@ export class CartComponent implements OnInit {
 
   public removeProduct(id: number) {
     this.cart.removeProduct(id).subscribe({
-      next: (res: any) => {
+      next: (res: string) => {
         console.log(res);
         this.getCart();
       },

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Route } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 
 import { PagesService } from '../../pages.service';
 import { CartService } from '../cart/cart.service';
 import { CookieService } from 'ngx-cookie-service';
-
+import { Product } from 'src/app/interfaces/product.interface';
 @Component({
   selector: 'app-item-list',
   templateUrl: './item-list.component.html',
@@ -15,16 +15,17 @@ export class ItemListComponent implements OnInit {
   data: any;
   cartItems = [];
   public category = '';
-  searchText:string='';
+  searchText: string = '';
 
   constructor(
     private pageService: PagesService,
     private route: ActivatedRoute,
     private router: Router,
     private cartService: CartService,
-    private cookie: CookieService,
+    private cookie: CookieService
+  ) {
 
-  ) {}
+  }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((res) => {
@@ -38,12 +39,9 @@ export class ItemListComponent implements OnInit {
       }
     });
   }
-   public onSearchTextEntered(searchValue:string){
-    this.searchText=searchValue;
+  public onSearchTextEntered(searchValue: string) {
+    this.searchText = searchValue;
     console.log(this.searchText);
-
-
-
   }
 
   private getMobileData() {
@@ -62,7 +60,7 @@ export class ItemListComponent implements OnInit {
     });
   }
 
-  addtocart(data: any) {
+  public addtocart(data: any) {
     this.cartService.getCartItem(data.id).subscribe({
       next: (res: any) => {
         if (res.id) {
@@ -94,9 +92,11 @@ export class ItemListComponent implements OnInit {
     this.navigateToCart();
   }
 
-  private addCart(data: any) {
+  private addCart(data: Product) {
     if (this.checkLoginStatus()) {
       data.quantity = 1;
+      console.log('data', data);
+
       this.cartService.addtoCart(data).subscribe({
         next: (res2: any) => {
           console.log(res2);

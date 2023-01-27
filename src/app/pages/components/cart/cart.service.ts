@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Product } from 'src/app/interfaces/product.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -9,7 +10,7 @@ export class CartService {
 
   constructor(private http: HttpClient) {}
 
-  addtoCart(product: any) {
+  addtoCart(product: Product) {
     return this.http.post(this.url, product);
   }
 
@@ -22,7 +23,7 @@ export class CartService {
   }
 
   updateCart(data: any) {
-    return this.http.put(`${this.url}/${data.id}`, data);
+    return this.http.put(`${this.url}/${data.id}`,data);
   }
 
   buyProduct(id: any) {

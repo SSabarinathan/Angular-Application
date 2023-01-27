@@ -1,4 +1,4 @@
-import { ErrorHandler, NgModule } from '@angular/core';
+import {  NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AuthGuardGuard } from '../components/login/guards/auth-guard.guard';

@@ -1,4 +1,4 @@
-<div *ngIf="productList.length != 0">
+<div *ngIf="productList?.length != 0">
   <div class="goBack">
     <button class="back_button" (click)="goBac()"><-</button>
   </div>
@@ -17,18 +17,33 @@
           <h4>
             Total price is: {{ item.cost * item.quantity | currency : "INR" }}
           </h4>
-          <br /><div class="quantity">
-          <button type="button" (click)="minus(item)">-</button>
-          <input class="quantity_box" type="number" [value]="item.quantity" readonly />
-          <button type="button" (click)="plus(item)">+</button></div>
+          <br />
+          <div class="quantity">
+            <button type="button" (click)="minus(item)">-</button>
+            <input
+              class="quantity_box"
+              type="number"
+              [value]="item.quantity"
+              readonly
+            />
+            <button type="button" (click)="plus(item)">+</button>
+          </div>
         </div>
         <div class="buy">
-          <button class="buy_button" type="button" (click)="buyProduct(item.id)">
+          <button
+            class="buy_button"
+            type="button"
+            (click)="buyProduct(item.id)"
+          >
             Buy Product</button
           ><br />
         </div>
         <div class="remove">
-          <button class="remove_button" type="button" (click)="removeProduct(item.id)">
+          <button
+            class="remove_button"
+            type="button"
+            (click)="removeProduct(item.id)"
+          >
             Remove From Cart
           </button>
         </div>
@@ -37,9 +52,8 @@
   </div>
 </div>
 
-<div class="empty" *ngIf="productList.length == 0">
-  <div class="empty_cart">  Sorry !! Your Cart is Empty now !!
-  </div>
+<div class="empty" *ngIf="productList?.length == 0">
+  <div class="empty_cart">Sorry !! Your Cart is Empty now !!</div>
   <img
     class="empty_image"
     src="https://i0.wp.com/www.huratips.com/wp-content/uploads/2019/04/empty-cart.png?fit=603%2C288&ssl=1"
@@ -48,5 +62,4 @@
   <button class="buyItems" (click)="buyItems()">
     Start Purchasing Products!!
   </button>
-
 </div>

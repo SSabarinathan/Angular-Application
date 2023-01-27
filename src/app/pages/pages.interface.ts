@@ -4,7 +4,9 @@ export interface Mobile  {
   cost: number;
   id: number;
   quantity:number;
-  specs:string
+  specs:string;
+  data:string;
+
 }
 
 export interface Laptop {
@@ -13,8 +15,7 @@ export interface Laptop {
   cost: number;
   quantity:number;
   id:number;
-  specs:string
-
-
-
+  specs:string;
+  data:string;
 }
+

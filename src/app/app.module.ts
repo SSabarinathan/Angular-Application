@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import {MatIconModule} from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +16,10 @@ import { SignupComponent } from './components/login/login.component';
 import { CookieService } from 'ngx-cookie-service';
 import { FormsModule } from '@angular/forms';
 import { LogoutComponent } from './components/logout/logout.component';
+
+
+
+
 
 
 
@@ -39,14 +42,15 @@ import { LogoutComponent } from './components/logout/logout.component';
         AppRoutingModule,
         ReactiveFormsModule,
         HttpClientModule,
-        FormsModule,
-        MatIconModule
+        FormsModule
 
     ],
     providers: [CookieService],
     bootstrap: [AppComponent],
 })
 export class AppModule { }
+
+
 //git push cmds
 
 // git add .

@@ -85,6 +85,63 @@ td {
   height: 50px;
 }
 
+.buy-btn {
+  background-color: #00cf9f8a;
+  color: rebeccapurple;
+  font-weight: 900;
+}
+.not-btn{
+  background-color: #00cf9f8a;
+  color: orangered;
+  font-weight: 900;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 576px) and (max-width: 767.98px) {
   .card-deck .card {
     -ms-flex: 0 0 48.7%;
@@ -104,15 +161,4 @@ td {
     -ms-flex: 0 0 24%;
     flex: 0 0 24%;
   }
-}
-.buy-btn {
-  background-color: #00cf9f8a;
-  color: rebeccapurple;
-  font-weight: 900;
-}
-.not-btn{
-  background-color: #00cf9f8a;
-  color: red;
-  font-weight: 900;
-
 }

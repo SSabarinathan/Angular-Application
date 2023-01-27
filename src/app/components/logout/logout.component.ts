@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {  Router } from '@angular/router';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-logout',
@@ -8,16 +9,16 @@ import {  Router } from '@angular/router';
 })
 export class LogoutComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router , private cookie:CookieService) { this.logout()}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
-//  logout=()=>{
+ logout=()=>{
 
-//   return this.cookie.delete('Message');
+  return this.cookie.delete('Message');
 
-// }
+}
+
 loginAgain(){
   this.router.navigate(['login'])
 

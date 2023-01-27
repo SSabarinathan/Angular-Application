@@ -3,10 +3,6 @@
   <li><a routerLink="category">Category</a></li>
   <li><a routerLink="cart">Cart</a></li>
   <li><a routerLink="offer">Offer</a></li>
-  <li *ngIf="!login.user() " class="login"><a routerLink="login">Login</a></li>
-
-  <li *ngIf="logout " class="login"><a routerLink="logout">Logout</a></li>
-
-
-
+  <li *ngIf="!login.user() " class="login" ><a routerLink="login">Login</a></li>
+  <li *ngIf="logout" class="login"><a routerLink="logout">Logout</a></li>
 </div>

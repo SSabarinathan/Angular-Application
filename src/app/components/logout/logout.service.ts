@@ -7,14 +7,12 @@ import { CookieService } from 'ngx-cookie-service';
 export class LogoutService {
 
   constructor(private cookie:CookieService) {
-    this.logout();
+    // this.logout();
    }
 
 
- logout=()=>{
-
-
-   this.cookie.deleteAll;
-}
+//  logout=()=>{
+//    this.cookie.deleteAll;
+// }
 
 }
