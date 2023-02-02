@@ -538,85 +538,41 @@
   ],
   "userDetails": [
     {
-      "text": "Sabarinathan",
-      "password": "Saba@12345",
+      "text": "dfcgvhbnjk",
+      "password": "sdfgvhSedrftg@2345",
       "id": 1
     },
     {
-      "text": "Sabarinagghjk",
-      "password": "Svghjk@1234ghj",
+      "text": "dfcgvhbnjkm",
+      "password": "edrftgyhj@2345Fg",
       "id": 2
     },
     {
-      "text": "Shobaa",
-      "password": "Shoba@123dfghjkl",
+      "text": "cvghbnjkm,l",
+      "password": "gvhbnj@23456DFG",
       "id": 3
     },
     {
-      "text": "esdrftgyhuijkolplpkoijhuygf",
-      "password": "drftyghujiSasdfg@12345",
+      "text": "bhnjmjnhbgbhnj",
+      "password": "hbnj#@@34567FGH",
       "id": 4
     },
     {
-      "text": "fghjklghj",
-      "password": "fghSsdf@1234",
+      "text": "b nmnbnn",
+      "password": "hjnhbjnhbjn@2345VB",
       "id": 5
     },
     {
-      "text": "ghjkljnk",
-      "password": "hbnmSghbnj@234",
+      "text": "bhnjkm",
+      "password": "hbnjm@2345RFGHB",
       "id": 6
     },
     {
-      "text": "gvhbnjkm",
-      "password": "ghjkSsdfg@gh@@3",
+      "text": "gyhuji",
+      "password": "Shbjnkma23456@#$",
       "id": 7
-    },
-    {
-      "text": "2345678Svbn",
-      "password": "Sabbb@23456",
-      "id": 8
-    },
-    {
-      "text": "fghjkl;lkjhg",
-      "password": "Sxcvbn@1234567u",
-      "id": 9
-    },
-    {
-      "text": "dfghjkkjnb",
-      "password": "Sasdfgh1234@",
-      "id": 10
-    },
-    {
-      "text": "fghjkl;f",
-      "password": "ghjkl@12345WSxcvb",
-      "id": 11
-    },
-    {
-      "text": "fghjkl;",
-      "password": "fghjk@12345S",
-      "id": 12
-    },
-    {
-      "text": "ghjkmln",
-      "password": "Sghjk@1234",
-      "id": 13
-    },
-    {
-      "text": "yuijlk;l",
-      "password": "fghjSdfg@1234",
-      "id": 14
-    },
-    {
-      "text": "fghjkjh",
-      "password": "Sfghjk@12345",
-      "id": 15
-    },
-    {
-      "text": "dfghjkl;kjh",
-      "password": "fghjkSd@#4",
-      "id": 16
     }
   ],
-  "cart": []
+  "cart": [],
+  "newUser": []
 }

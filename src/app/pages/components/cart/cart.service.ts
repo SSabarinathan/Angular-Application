@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Product } from 'src/app/interfaces/product.interface';
+import {  Product } from 'src/app/interfaces/product.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -26,11 +26,11 @@ export class CartService {
     return this.http.put(`${this.url}/${data.id}`,data);
   }
 
-  buyProduct(id: any) {
+  buyProduct(id: number) {
     return this.http.delete(`${this.url}/${id}`);
   }
 
-  removeProduct(id: any) {
+  removeProduct(id: number) {
     return this.http.delete(`${this.url}/${id}`);
   }
 }

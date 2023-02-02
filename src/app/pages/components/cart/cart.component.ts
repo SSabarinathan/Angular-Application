@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from './cart.service';
 import { Router } from '@angular/router';
+import { ProductList } from 'src/app/interfaces/product.interface';
 
 @Component({
   selector: 'app-cart',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./cart.component.css'],
 })
 export class CartComponent implements OnInit {
-  productList: any[];
+  productList: ProductList[];
   updateData: String[];
   pageService: String;
   router: String;
@@ -25,13 +26,13 @@ export class CartComponent implements OnInit {
 
   private getCart() {
     this.cart.getCart().subscribe({
-      next: (res: any) => {
+      next: (res: ProductList[]) => {
         this.productList = res;
       },
     });
   }
 
-  public plus(data: any) {
+  public plus(data: ProductList) {
     console.log(data);
     if (data.quantity <= 10) {
       data.quantity++;
@@ -39,7 +40,7 @@ export class CartComponent implements OnInit {
     this.UpdateQuantity(data);
   }
 
-  public minus(data: any) {
+  public minus(data: ProductList) {
     if (data.quantity > 1) {
       data.quantity--;
     }
@@ -48,7 +49,7 @@ export class CartComponent implements OnInit {
 
   public UpdateQuantity(data) {
     this.cart.updateCart(data).subscribe({
-      next: (result: any) => {
+      next: (result: String[]) => {
         this.updateData = result;
       },
     });
@@ -56,7 +57,7 @@ export class CartComponent implements OnInit {
 
   public buyProduct(id: number) {
     this.cart.buyProduct(id).subscribe({
-      next: (res: any) => {
+      next: (res: ProductList[]) => {
         console.log(res);
         this.getCart();
 

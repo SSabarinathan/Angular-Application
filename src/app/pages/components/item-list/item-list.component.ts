@@ -5,14 +5,14 @@ import { Router } from '@angular/router';
 import { PagesService } from '../../pages.service';
 import { CartService } from '../cart/cart.service';
 import { CookieService } from 'ngx-cookie-service';
-import { Product } from 'src/app/interfaces/product.interface';
+import {  Product } from 'src/app/interfaces/product.interface';
 @Component({
   selector: 'app-item-list',
   templateUrl: './item-list.component.html',
   styleUrls: ['./item-list.component.css'],
 })
 export class ItemListComponent implements OnInit {
-  data: any;
+  data:any ;
   cartItems = [];
   public category = '';
   searchText: string = '';

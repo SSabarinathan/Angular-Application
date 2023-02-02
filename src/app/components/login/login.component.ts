@@ -10,7 +10,7 @@ import { LoginService } from './login.service';
   styleUrls: ['./login.component.css'],
 })
 export class SignupComponent implements OnInit {
-  title: 'ReactiveForms';
+  // title: 'ReactiveForms';
   form: FormGroup;
   cookieValue: string;
 
@@ -24,11 +24,7 @@ export class SignupComponent implements OnInit {
   ngOnInit(): void {
     this.form = this.formBuilder.group({
       text: [null, [Validators.required, Validators.minLength(6)]],
-      password: [
-      null,
-        [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])/),
-        ],
-      ],
+      password: [ null, [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])/), ] ],
     });
   }
   OnSubmit() {
@@ -41,5 +37,8 @@ export class SignupComponent implements OnInit {
         },
       });
     }
+  }
+  signup(){
+    this.router.navigate(['signup'])
   }
 }

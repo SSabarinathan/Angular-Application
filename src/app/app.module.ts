@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { CookieService } from 'ngx-cookie-service';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,16 +16,7 @@ import { CategoryComponent } from './pages/components/category/category.componen
 import { CartComponent } from './pages/components/cart/cart.component';
 import { OfferComponent } from './pages/components/offer/offer.component';
 import { SignupComponent } from './components/login/login.component';
-import { CookieService } from 'ngx-cookie-service';
-import { FormsModule } from '@angular/forms';
 import { LogoutComponent } from './components/logout/logout.component';
-
-
-
-
-
-
-
 
 @NgModule({
     declarations: [
@@ -42,7 +36,7 @@ import { LogoutComponent } from './components/logout/logout.component';
         AppRoutingModule,
         ReactiveFormsModule,
         HttpClientModule,
-        FormsModule
+        FormsModule,
 
     ],
     providers: [CookieService],

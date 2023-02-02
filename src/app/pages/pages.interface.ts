@@ -19,3 +19,10 @@ export interface Laptop {
   data:string;
 }
 
+export interface newUser{
+  namel:string;
+  email: string;
+  password:string
+
+
+}
