@@ -571,8 +571,33 @@
       "text": "gyhuji",
       "password": "Shbjnkma23456@#$",
       "id": 7
+    },
+    {
+      "text": "Sabarinatha",
+      "password": "Sghn@123h",
+      "id": 8
+    },
+    {
+      "text": "Sdrftyghuijk",
+      "password": "SDfg@34dcfvgbhj",
+      "id": 9
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": 1,
+      "modelname": "Apple-iphone 12",
+      "link": "https://m.media-amazon.com/images/I/31jQ91XUDhS._SY445_SX342_QL70_FMwebp_.jpg",
+      "description": "(Purple color, 6GB, 128GB Internal storage)",
+      "specs": {
+        "color": "Light Purple",
+        "Size": "6GB + 128GB",
+        "Style": "S1"
+      },
+      "cost": 55000,
+      "stock": "available",
+      "quantity": 3
+    }
+  ],
   "newUser": []
 }
