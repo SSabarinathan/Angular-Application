@@ -10,7 +10,7 @@ describe('ItemComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ ItemComponent ],
-      providers:[HttpClient,HttpHandler]
+      providers:[HttpClient,HttpHandler ]
     })
     .compileComponents();
   });

@@ -6,6 +6,9 @@ import {  Product } from 'src/app/interfaces/product.interface';
   providedIn: 'root',
 })
 export class CartService {
+  getData() {
+    throw new Error('Method not implemented.');
+  }
   public url = 'http://localhost:3000/cart';
 
   constructor(private http: HttpClient) {}
@@ -27,6 +30,7 @@ export class CartService {
   }
 
   buyProduct(id: number) {
+
     return this.http.delete(`${this.url}/${id}`);
   }
 

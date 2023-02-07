@@ -27,5 +27,17 @@ export interface ProductList{
   link:string;
 }
 
+// export interface itemList{
+//   data: any,
 
+// }
+export interface Products{
+  cost: number;
+  description: string;
+  specs: Specs;
+  quantity: number;
+  id:number;
+  modelname:string;
+  link:string;
+}
 

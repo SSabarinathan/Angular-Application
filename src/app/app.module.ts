@@ -18,6 +18,7 @@ import { OfferComponent } from './pages/components/offer/offer.component';
 import { SignupComponent } from './components/login/login.component';
 import { LogoutComponent } from './components/logout/logout.component';
 
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -36,7 +37,7 @@ import { LogoutComponent } from './components/logout/logout.component';
         AppRoutingModule,
         ReactiveFormsModule,
         HttpClientModule,
-        FormsModule,
+        FormsModule
 
     ],
     providers: [CookieService],

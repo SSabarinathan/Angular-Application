@@ -536,68 +536,7 @@
       "stock": "available"
     }
   ],
-  "userDetails": [
-    {
-      "text": "dfcgvhbnjk",
-      "password": "sdfgvhSedrftg@2345",
-      "id": 1
-    },
-    {
-      "text": "dfcgvhbnjkm",
-      "password": "edrftgyhj@2345Fg",
-      "id": 2
-    },
-    {
-      "text": "cvghbnjkm,l",
-      "password": "gvhbnj@23456DFG",
-      "id": 3
-    },
-    {
-      "text": "bhnjmjnhbgbhnj",
-      "password": "hbnj#@@34567FGH",
-      "id": 4
-    },
-    {
-      "text": "b nmnbnn",
-      "password": "hjnhbjnhbjn@2345VB",
-      "id": 5
-    },
-    {
-      "text": "bhnjkm",
-      "password": "hbnjm@2345RFGHB",
-      "id": 6
-    },
-    {
-      "text": "gyhuji",
-      "password": "Shbjnkma23456@#$",
-      "id": 7
-    },
-    {
-      "text": "Sabarinatha",
-      "password": "Sghn@123h",
-      "id": 8
-    },
-    {
-      "text": "Sdrftyghuijk",
-      "password": "SDfg@34dcfvgbhj",
-      "id": 9
-    }
-  ],
-  "cart": [
-    {
-      "id": 1,
-      "modelname": "Apple-iphone 12",
-      "link": "https://m.media-amazon.com/images/I/31jQ91XUDhS._SY445_SX342_QL70_FMwebp_.jpg",
-      "description": "(Purple color, 6GB, 128GB Internal storage)",
-      "specs": {
-        "color": "Light Purple",
-        "Size": "6GB + 128GB",
-        "Style": "S1"
-      },
-      "cost": 55000,
-      "stock": "available",
-      "quantity": 3
-    }
-  ],
+  "userDetails": [],
+  "cart": [],
   "newUser": []
 }

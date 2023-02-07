@@ -6,7 +6,6 @@ import { CookieService } from 'ngx-cookie-service';
   selector: 'app-logout',
   templateUrl: './logout.component.html',
   styleUrls: ['./logout.component.css'],
-  // providers: [LogoutService]
 })
 export class LogoutComponent implements OnInit {
 

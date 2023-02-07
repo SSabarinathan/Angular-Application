@@ -12,7 +12,7 @@ export class SignupService {
 
   }}
 
-  newUser(userData:string){
+ public newUser(userData:string){
     return this.http.post(`${this.url}`, userData)
   }
 }

@@ -6,6 +6,7 @@ import { PagesService } from '../../pages.service';
 import { CartService } from '../cart/cart.service';
 import { CookieService } from 'ngx-cookie-service';
 import {  Product } from 'src/app/interfaces/product.interface';
+
 @Component({
   selector: 'app-item-list',
   templateUrl: './item-list.component.html',
