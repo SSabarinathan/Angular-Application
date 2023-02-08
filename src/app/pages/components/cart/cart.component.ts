@@ -18,15 +18,14 @@ export class CartComponent implements OnInit {
   pageService: String;
   router: String;
 
-
   constructor(
-
-    private cart: CartService, private cartService: CartService, private route:Router, private dialog:MatDialog) {
-
-    }
+    private cart: CartService,
+    private cartService: CartService,
+    private route: Router,
+    private dialog: MatDialog
+  ) {}
   ngOnInit(): void {
     this.getCart();
-
   }
 
   private getCart() {
@@ -66,16 +65,13 @@ export class CartComponent implements OnInit {
         console.log(res);
         this.getCart();
 
-
-            this.dialog.open(BuyComponent);
-            setTimeout(()=>{
-              this.dialog.closeAll();
-            },4000)
+        this.dialog.open(BuyComponent);
+        setTimeout(() => {
+          this.dialog.closeAll();
+        }, 4000);
       },
     });
   }
-
-
 
   // buy(){
   //   this.dialog.open(BuyComponent);
@@ -83,7 +79,6 @@ export class CartComponent implements OnInit {
   //     this.dialog.closeAll();
   //   },3000)
   // }
-
 
   public removeProduct(id: number) {
     this.cart.removeProduct(id).subscribe({
@@ -94,13 +89,10 @@ export class CartComponent implements OnInit {
     });
   }
 
-  goBac(){
+  goBac() {
     this.route.navigate(['/items/mobile']);
-
-
   }
-  buyItems(){
-    this.route.navigate(['/category'])
+  buyItems() {
+    this.route.navigate(['/category']);
   }
-
 }

@@ -1,35 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup,  Validators } from '@angular/forms';
-import {  Router } from '@angular/router';
-
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { SignupService } from './signup.service';
-
 
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
-  styleUrls: ['./signup.component.css']
+  styleUrls: ['./signup.component.css'],
 })
 export class SignupComponent implements OnInit {
+  signinForm = this.formBuilders.group({});
   forms: FormGroup;
 
   constructor(
     private formBuilders: FormBuilder,
-    private signupService:SignupService,
-    private router: Router,
-
-  ) { }
+    private signupService: SignupService
+  ) {}
 
   ngOnInit(): void {
-    this.forms=this.formBuilders.group({
-      text:[[Validators.required]],
-      email:[[Validators.required]],
-      password:[[Validators.required]],
-
+    this.forms = this.formBuilders.group({
+      text: [[Validators.required]],
+      email: [[Validators.required]],
+      password: [[Validators.required]],
     });
-
   }
-  OnSubmit(){
+
+  OnSubmit() {
     console.log(this.forms.value);
 
     if (this.forms.valid) {
@@ -39,13 +34,5 @@ export class SignupComponent implements OnInit {
         },
       });
     }
+  }
 }
-home(){
-     this.router.navigate(['login']);
-}
-
-
-
-}
-
-

@@ -1,36 +1,41 @@
-<form class="form-horizontal" formGroup="forms" (ngSubmit)="OnSubmit()" >
-  <h2>Creating new Account</h2><br>
-  <div>
-      <div class="form-group">
-         <div>
-            <label for="text" class="control-lable">Name</label>
-            <input type="text" placeholder="Enter your name" formControlName="text">
-            <!-- <small *ngIf="!this.forms.get('text')?.valid && forms.get('text')?.touched" >**Enter the username!!</small > -->
-        </div>
-      </div>
-
-    <div class="form-group">
-        <div>
-            <label for="email" class="control-lable">Email ID</label>
-            <input type="email" placeholder="Enter your e-mail" formControlName="email">
-            <!-- <small *ngIf="!this.forms.get('email')?.valid && forms.get('email')?.touched" >**Enter the e-mail Id!!</small > -->
-        </div>
-  </div>
-  <div class="form-group">
-    <div>
-        <label for="password" class="control-lable">Password</label>
-        <input type="password" placeholder="Enter your password" formControlName="password">
-        <!-- <small *ngIf="!this.forms.get('password')?.valid && forms.get('password')?.touched" >**Enter the Password!!</small > -->
-    </div>
-</div>
-<!-- <button type="submit" class="btn btn-primary" [disabled]="!forms.valid" > Submit </button><br><br> -->
-
-
-
-  </div>
-
-  <button  class="remove" type="button" class="btn btn-primary" (click)="home()" > Submit </button><br><br>
+<p>signin works!</p>
+<form [formGroup]="signinForm">
 
 </form>
+<form class="form-horizontal" [formGroup]="forms" (ngSubmit)="OnSubmit()" >
+    <h2>Creating new Account</h2><br>
+    <div>
+        <div class="form-group">
+           <div>
+              <label for="text" class="control-lable">Name</label>
+              <input type="text" placeholder="Enter your name" formControlName="text">
+              <!-- <small *ngIf="!this.forms.get('text')?.valid && forms.get('text')?.touched" >**Enter the username!!</small > -->
+          </div>
+        </div>
+
+      <div class="form-group">
+          <div>
+              <label for="email" class="control-lable">Email ID</label>
+              <input type="email" placeholder="Enter your e-mail" formControlName="email">
+              <!-- <small *ngIf="!this.forms.get('email')?.valid && forms.get('email')?.touched" >**Enter the e-mail Id!!</small > -->
+          </div>
+    </div>
+    <div class="form-group">
+      <div>
+          <label for="password" class="control-lable">Password</label>
+          <input type="password" placeholder="Enter your password" formControlName="password">
+          <!-- <small *ngIf="!this.forms.get('password')?.valid && forms.get('password')?.touched" >**Enter the Password!!</small > -->
+      </div>
+  </div>
+  <!-- <button type="submit" class="btn btn-primary" [disabled]="!forms.valid" > Submit </button><br><br> -->
+
+
+
+    </div>
+
+    <button  class="remove" type="button" class="btn btn-primary" > Submit </button><br><br>
+
+  </form>
+
 
 

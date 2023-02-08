@@ -15,10 +15,11 @@ import { HomeComponent } from './pages/components/home/home.component';
 import { CategoryComponent } from './pages/components/category/category.component';
 import { CartComponent } from './pages/components/cart/cart.component';
 import { OfferComponent } from './pages/components/offer/offer.component';
-import { SignupComponent } from './components/login/login.component';
+import { LoginComponent } from './components/login/login.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import { BuyComponent } from './buy/buy.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SignupComponent } from './components/signup/signup.component';
 
 
 @NgModule({
@@ -31,9 +32,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         CategoryComponent,
         CartComponent,
         OfferComponent,
-        SignupComponent,
+        LoginComponent,
         LogoutComponent,
         BuyComponent,
+        SignupComponent,
     ],
     imports: [
         BrowserModule,

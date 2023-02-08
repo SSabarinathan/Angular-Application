@@ -9,7 +9,7 @@ import { LoginService } from './login.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
 })
-export class SignupComponent implements OnInit {
+export class LoginComponent implements OnInit {
   // title: 'ReactiveForms';
   form: FormGroup;
   cookieValue: string;

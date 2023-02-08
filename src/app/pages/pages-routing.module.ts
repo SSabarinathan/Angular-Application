@@ -9,7 +9,7 @@ import { ItemListComponent } from './components/item-list/item-list.component';
 import { ItemComponent } from './components/item/item.component';
 import { OfferComponent } from './components/offer/offer.component';
 import { LogoutComponent } from '../components/logout/logout.component';
-import { SignupComponent } from '../components/signup/signup.component';
+import { SignupComponent } from '../components/signup/signup.component'
 
 const routes: Routes = [
   {
