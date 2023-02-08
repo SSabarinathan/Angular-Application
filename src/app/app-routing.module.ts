@@ -8,7 +8,7 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('./pages/pages.module').then((m) => m.PagesModule),
+      import('./pages/pages.module').then((p) => p.PagesModule),
   },
   {
     path: 'login',
@@ -23,3 +23,4 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
+

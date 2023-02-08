@@ -30,21 +30,14 @@
           </div>
         </div>
         <div class="buy">
-          <button
-            class="buy_button"
-            type="button"
-            (click)="buyProduct(item.id)"
-          >
-            Buy Product</button
-          ><br />
+          <button  class="buy_button" type="button"  (click)="buyProduct(item.id)"> Buy Product</button><br />
+          <!-- <button (click)="buy()">Buy </button> -->
         </div>
         <div class="remove">
           <button
             class="remove_button"
             type="button"
-            (click)="removeProduct(item.id)"
-          >
-            Remove From Cart
+            (click)="removeProduct(item.id)" >  Remove From Cart
           </button>
         </div>
       </div>

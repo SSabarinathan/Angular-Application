@@ -2,11 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { CartService } from './cart.service';
 import { Router } from '@angular/router';
 import { ProductList } from 'src/app/interfaces/product.interface';
+import { BuyComponent } from 'src/app/buy/buy.component';
+import { timeStamp } from 'console';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css'],
+  // providers:[PagesService]
 })
 export class CartComponent implements OnInit {
   productList: ProductList[];
@@ -14,9 +18,10 @@ export class CartComponent implements OnInit {
   pageService: String;
   router: String;
 
+
   constructor(
 
-    private cart: CartService, private cartService: CartService, private route:Router) {
+    private cart: CartService, private cartService: CartService, private route:Router, private dialog:MatDialog) {
 
     }
   ngOnInit(): void {
@@ -61,9 +66,24 @@ export class CartComponent implements OnInit {
         console.log(res);
         this.getCart();
 
+
+            this.dialog.open(BuyComponent);
+            setTimeout(()=>{
+              this.dialog.closeAll();
+            },4000)
       },
     });
   }
+
+
+
+  // buy(){
+  //   this.dialog.open(BuyComponent);
+  //   setTimeout(()=>{
+  //     this.dialog.closeAll();
+  //   },3000)
+  // }
+
 
   public removeProduct(id: number) {
     this.cart.removeProduct(id).subscribe({

@@ -536,7 +536,28 @@
       "stock": "available"
     }
   ],
-  "userDetails": [],
+  "userDetails": [
+    {
+      "text": "gvbhnjhbgvbh",
+      "password": "fvgbhSdf@#$Y45",
+      "id": 1
+    },
+    {
+      "text": "fcgvhbnj",
+      "password": "dxcfvgbh@234df5656@SD",
+      "id": 2
+    },
+    {
+      "text": "Sabayghj@2345",
+      "password": "Sabayghj@2345",
+      "id": 3
+    },
+    {
+      "text": "tgyhujk",
+      "password": "fcvghbnj@2#$%dfGH",
+      "id": 4
+    }
+  ],
   "cart": [],
   "newUser": []
 }

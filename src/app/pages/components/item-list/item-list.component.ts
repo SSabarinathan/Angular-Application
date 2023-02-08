@@ -20,10 +20,10 @@ export class ItemListComponent implements OnInit {
 
   constructor(
     private pageService: PagesService,
-    private route: ActivatedRoute,
     private router: Router,
     private cartService: CartService,
-    private cookie: CookieService
+    private cookie: CookieService,
+    private route: ActivatedRoute
   ) {
 
   }

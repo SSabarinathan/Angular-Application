@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { CookieService } from 'ngx-cookie-service';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +17,8 @@ import { CartComponent } from './pages/components/cart/cart.component';
 import { OfferComponent } from './pages/components/offer/offer.component';
 import { SignupComponent } from './components/login/login.component';
 import { LogoutComponent } from './components/logout/logout.component';
+import { BuyComponent } from './buy/buy.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -31,16 +33,19 @@ import { LogoutComponent } from './components/logout/logout.component';
         OfferComponent,
         SignupComponent,
         LogoutComponent,
+        BuyComponent,
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         ReactiveFormsModule,
         HttpClientModule,
-        FormsModule
+        FormsModule,
+        BrowserAnimationsModule,
+        MatDialogModule
 
     ],
-    providers: [CookieService],
+    // providers: [CookieService],
     bootstrap: [AppComponent],
 })
 export class AppModule { }
