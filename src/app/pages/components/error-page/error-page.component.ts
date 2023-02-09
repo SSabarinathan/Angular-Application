@@ -12,7 +12,7 @@ export class ErrorPageComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  homePage(){
+  public homePage(){
     this.router.navigate(['/home'])
 
   }

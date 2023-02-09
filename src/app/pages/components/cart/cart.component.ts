@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { CartService } from './cart.service';
+import { CartService } from '../../../service/cart.service';
 import { Router } from '@angular/router';
 import { ProductList } from 'src/app/interfaces/product.interface';
-import { BuyComponent } from 'src/app/buy/buy.component';
-import { timeStamp } from 'console';
+import { BuyComponent } from 'src/app/components/buy/buy.component';
 import { MatDialog } from '@angular/material/dialog';
+import { RemoveCartComponent } from 'src/app/components/remove-cart/remove-cart.component';
 
 @Component({
   selector: 'app-cart',
@@ -20,9 +20,8 @@ export class CartComponent implements OnInit {
 
   constructor(
     private cart: CartService,
-    private cartService: CartService,
     private route: Router,
-    private dialog: MatDialog
+    private dialog: MatDialog,
   ) {}
   ngOnInit(): void {
     this.getCart();
@@ -68,23 +67,22 @@ export class CartComponent implements OnInit {
         this.dialog.open(BuyComponent);
         setTimeout(() => {
           this.dialog.closeAll();
-        }, 4000);
+        }, 3000);
       },
     });
   }
 
-  // buy(){
-  //   this.dialog.open(BuyComponent);
-  //   setTimeout(()=>{
-  //     this.dialog.closeAll();
-  //   },3000)
-  // }
 
   public removeProduct(id: number) {
     this.cart.removeProduct(id).subscribe({
       next: (res: string) => {
         console.log(res);
         this.getCart();
+
+        this.dialog.open(RemoveCartComponent);
+        setTimeout(()=>{
+          this.dialog.closeAll();
+        },1500)
       },
     });
   }

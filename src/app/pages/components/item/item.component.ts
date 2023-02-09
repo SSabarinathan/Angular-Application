@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { PagesService } from '../../pages.service';
+import { PagesService } from '../../../service/pages.service';
 @Component({
   selector: 'app-item',
   templateUrl: './item.component.html',
@@ -9,7 +9,7 @@ import { PagesService } from '../../pages.service';
 export class ItemComponent implements OnInit {
   public itemData: any = {};
 
-  constructor(private pageService: PagesService) {}
+  constructor(private pageService: PagesService) { }
 
   ngOnInit(): void {
     this.getItemData();

@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
 import { CartService } from './cart.service';
-import {  HttpClient, HttpHandler } from '@angular/common/http';
+import {   HttpHandler } from '@angular/common/http';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 
@@ -12,7 +12,7 @@ describe('CartService', () => {
     TestBed.configureTestingModule(
       {
         imports:[HttpClientTestingModule],
-        providers:[HttpHandler, HttpClient],
+        providers:[HttpHandler],
 
       });
     service = TestBed.inject(CartService);

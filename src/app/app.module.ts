@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Pipe } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
@@ -17,9 +17,10 @@ import { CartComponent } from './pages/components/cart/cart.component';
 import { OfferComponent } from './pages/components/offer/offer.component';
 import { LoginComponent } from './components/login/login.component';
 import { LogoutComponent } from './components/logout/logout.component';
-import { BuyComponent } from './buy/buy.component';
+import { BuyComponent } from './components/buy/buy.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SignupComponent } from './components/signup/signup.component';
+import { RemoveCartComponent } from './components/remove-cart/remove-cart.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { SignupComponent } from './components/signup/signup.component';
         LogoutComponent,
         BuyComponent,
         SignupComponent,
+        RemoveCartComponent,
     ],
     imports: [
         BrowserModule,
@@ -60,3 +62,6 @@ export class AppModule { }
 // git push -u origin main
 //-------------json initial
 //json-server --watch db.json
+//-------------code coverage
+//ng test --no-watch --code-coverage
+//ng test

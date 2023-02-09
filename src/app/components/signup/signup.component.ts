@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { SignupService } from './signup.service';
+import { SignupService } from '../../service/signup.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -8,29 +9,29 @@ import { SignupService } from './signup.service';
   styleUrls: ['./signup.component.css'],
 })
 export class SignupComponent implements OnInit {
-  signinForm = this.formBuilders.group({});
   forms: FormGroup;
 
   constructor(
     private formBuilders: FormBuilder,
-    private signupService: SignupService
+    private signupService: SignupService,
+    private router:Router,
   ) {}
 
   ngOnInit(): void {
     this.forms = this.formBuilders.group({
-      text: [[Validators.required]],
-      email: [[Validators.required]],
-      password: [[Validators.required]],
+      text: ['',[Validators.required, Validators.minLength(6)]],
+      email: ['',[Validators.required, Validators.email]],
+      password: ['',[Validators.required,Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])/)]],
     });
   }
 
-  OnSubmit() {
+ public OnSubmitNew() {
     console.log(this.forms.value);
 
     if (this.forms.valid) {
       this.signupService.newUser(this.forms.value).subscribe({
         next: () => {
-          // this.router.navigate(['login']);
+          this.router.navigate(['login']);
         },
       });
     }

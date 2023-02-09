@@ -20,7 +20,7 @@ export class PagesService {
 
   constructor(private http: HttpClient) {}
 
-  getMobile() {
+  public getMobile() {
     return this.http.get(this.url);
   }
   ///////////////////////////////////////////////////////////
@@ -30,19 +30,19 @@ export class PagesService {
     // 'https://run.mocky.io/v3/328f2094-d1fa-44da-bd1c-  50f7245da1f3';
     'http://localhost:3000/laptop';
 
-  getLaptop() {
+  public getLaptop() {
     return this.http.get(this.laptop_url);
   }
 
-  getItemData(category: string, id: number) {
+  public getItemData(category: string, id: number) {
     return this.http.get(`${this.baseUrl}/${category}/${id}`);
   }
 
-  updateSelectedProduct(data: String) {
+  public updateSelectedProduct(data: String) {
     this.selectedProduct.next(data);
   }
 
-  getSelectedProduct() {
+  public getSelectedProduct() {
     return this.selectedProduct;
   }
 }

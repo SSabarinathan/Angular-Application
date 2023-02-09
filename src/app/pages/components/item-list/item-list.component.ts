@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 
-import { PagesService } from '../../pages.service';
-import { CartService } from '../cart/cart.service';
+import { PagesService } from '../../../service/pages.service';
+import { CartService } from '../../../service/cart.service';
 import { CookieService } from 'ngx-cookie-service';
 import {  Product } from 'src/app/interfaces/product.interface';
 
@@ -61,7 +61,7 @@ export class ItemListComponent implements OnInit {
     });
   }
 
-  public addtocart(data: any) {
+  public addtocart(data:any) {
     this.cartService.getCartItem(data.id).subscribe({
       next: (res: any) => {
         if (res.id) {
@@ -111,14 +111,15 @@ export class ItemListComponent implements OnInit {
     this.router.navigate(['cart']);
   }
 
-  buyProduct(data: string) {
+   public buyProduct(data: string) {
     if (this.checkLoginStatus()) {
       this.pageService.updateSelectedProduct(data);
     }
     this.router.navigate(['item']);
   }
 
-  goBack() {
+
+  public goBack() {
     this.router.navigate(['category']);
   }
 

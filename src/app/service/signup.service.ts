@@ -15,4 +15,11 @@ export class SignupService {
  public newUser(userData:string){
     return this.http.post(`${this.url}`, userData)
   }
+
+
+ public newDataCheck(){
+  return this.http.get(`${this.url}`)
+}
+
+
 }

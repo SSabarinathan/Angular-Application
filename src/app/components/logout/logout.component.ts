@@ -15,13 +15,13 @@ export class LogoutComponent implements OnInit {
 
   ngOnInit(): void { }
 
- logout=()=>{
+ public logout=()=>{
 
   return this.cookie.delete('Message');
 
 }
 
-loginAgain(){
+public loginAgain(){
   this.router.navigate(['login'])
 
 }

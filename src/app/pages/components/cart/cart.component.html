@@ -1,6 +1,6 @@
 <div *ngIf="productList?.length != 0">
   <div class="goBack">
-    <button class="back_button" (click)="goBac()"><-</button>
+    <button class="back_button" (click)="goBac()"><--Back</button>
   </div>
   <div>
     <div class="card-deck mt-5 full">
@@ -31,13 +31,9 @@
         </div>
         <div class="buy">
           <button  class="buy_button" type="button"  (click)="buyProduct(item.id)"> Buy Product</button><br />
-          <!-- <button (click)="buy()">Buy </button> -->
         </div>
         <div class="remove">
-          <button
-            class="remove_button"
-            type="button"
-            (click)="removeProduct(item.id)" >  Remove From Cart
+          <button  class="remove_button"  type="button"  (click)="removeProduct(item.id)" >  Remove From Cart
           </button>
         </div>
       </div>

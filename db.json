@@ -538,41 +538,31 @@
   ],
   "userDetails": [
     {
-      "text": "gvbhnjhbgvbh",
-      "password": "fvgbhSdf@#$Y45",
+      "text": "fghjkgvbh",
+      "password": "fgvhbDFG234%",
       "id": 1
     },
     {
-      "text": "fcgvhbnj",
-      "password": "dxcfvgbh@234df5656@SD",
+      "text": "rdftgyhuj",
+      "password": "tfgh#$4drftT%",
       "id": 2
     },
     {
-      "text": "Sabayghj@2345",
-      "password": "Sabayghj@2345",
+      "text": "Sabari",
+      "password": "Sabari@123",
       "id": 3
     },
     {
-      "text": "tgyhujk",
-      "password": "fcvghbnj@2#$%dfGH",
+      "text": "Sabarighj",
+      "password": "gvhbJN234%fgvH",
       "id": 4
-    }
-  ],
-  "cart": [
+    },
     {
-      "id": 1,
-      "modelname": "Apple-iphone 12",
-      "link": "https://m.media-amazon.com/images/I/31jQ91XUDhS._SY445_SX342_QL70_FMwebp_.jpg",
-      "description": "(Purple color, 6GB, 128GB Internal storage)",
-      "specs": {
-        "color": "Light Purple",
-        "Size": "6GB + 128GB",
-        "Style": "S1"
-      },
-      "cost": 55000,
-      "stock": "available",
-      "quantity": 1
+      "text": "Sabaaari",
+      "password": "Sabari@123",
+      "id": 5
     }
   ],
+  "cart": [],
   "newUser": []
 }
