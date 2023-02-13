@@ -107,6 +107,7 @@ export class ItemListComponent implements OnInit {
     this.navigateToCart();
   }
 
+
   public navigateToCart() {
     this.router.navigate(['cart']);
   }

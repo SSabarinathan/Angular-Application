@@ -12,7 +12,7 @@ import { RemoveCartComponent } from 'src/app/components/remove-cart/remove-cart.
   styleUrls: ['./cart.component.css'],
   // providers:[PagesService]
 })
-export class CartComponent implements OnInit {
+export class CartComponent implements OnInit  {
   productList: ProductList[];
   updateData: String[];
   pageService: String;

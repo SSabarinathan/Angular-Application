@@ -1,4 +1,4 @@
-import { NgModule, Pipe } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
@@ -12,13 +12,13 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/components/home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CategoryComponent } from './pages/components/category/category.component';
 import { CartComponent } from './pages/components/cart/cart.component';
 import { OfferComponent } from './pages/components/offer/offer.component';
 import { LoginComponent } from './components/login/login.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import { BuyComponent } from './components/buy/buy.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SignupComponent } from './components/signup/signup.component';
 import { RemoveCartComponent } from './components/remove-cart/remove-cart.component';
 

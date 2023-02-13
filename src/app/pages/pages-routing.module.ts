@@ -1,7 +1,7 @@
 import {  NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { AuthGuardGuard } from '../components/login/guards/auth-guard.guard';
+import { AuthGuardGuard } from '../guards/auth-guard.guard';
 import { CartComponent } from './components/cart/cart.component';
 import { CategoryComponent } from './components/category/category.component';
 import { HomeComponent } from './components/home/home.component';
@@ -23,7 +23,7 @@ const routes: Routes = [
       { path: 'item', component: ItemComponent ,canActivate:[AuthGuardGuard]},
       {path:'logout' , component : LogoutComponent},
       {path:'signup', component: SignupComponent},
-      { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: '', redirectTo: 'home', pathMatch: 'full'},
     ],
   },
 ];

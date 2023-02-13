@@ -41,6 +41,7 @@ export class LoginService {
   public user(){
   return this.cookie.get('Message');
 
+
  }
 
 }

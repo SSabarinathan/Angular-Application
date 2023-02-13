@@ -31,10 +31,7 @@ export class LoginComponent implements OnInit {
           Validators.required,
           Validators.minLength(8),
           Validators.pattern(
-            /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])/
-          ),
-        ],
-      ],
+            /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])/),  ],],
     });
   }
   public OnSubmit() {
@@ -46,10 +43,54 @@ export class LoginComponent implements OnInit {
           this.cookie.set('Message', 'DataSuccessfullySubmitted!!');
           this.router.navigate(['/items/mobile']);
 
-        },
-      });
 
-      // if (this.form.valid) {
+          },
+      });
+    }
+  }
+
+  public login(){
+    this.signupService.newDataCheck().subscribe((res:any)=>{
+      const user=res.find((a:any)=>{
+      return a.text===this.form.value.text && a.password===this.form.value.password;
+   })
+      if(user){
+        this.router.navigate(['/items/mobile']);
+      }
+      else{
+        this.router.navigate(['login'])
+
+      }
+    })
+  }
+
+  public signup() {
+    this.router.navigate(['signup']);
+
+   }
+
+   
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // if (this.form.valid) {
       //   this.signupService.newDataCheck().subscribe((res: any) => {
       //     const user = res.find((a: any) => {
       //       return (a.text === this.form.value.text && a.password === this.form.value.password
@@ -64,25 +105,3 @@ export class LoginComponent implements OnInit {
       //     }
       //   });
       // }
-
-    }
-  }
-
-  public login(){
-    this.signupService.newDataCheck().subscribe((res:any)=>{
-      const user=res.find((a:any)=>{
-      return a.text===this.form.value.text && a.password===this.form.value.password;
-   })
-      if(user){
-        this.router.navigate(['/items/mobile']);
-      }
-      else{
-        this.router.navigate(['login'])
-      }
-    })
-  }
-
-  public signup() {
-    this.router.navigate(['signup']);
-  }
-}
