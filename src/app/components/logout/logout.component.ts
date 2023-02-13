@@ -10,7 +10,10 @@ import { CookieService } from 'ngx-cookie-service';
 export class LogoutComponent implements OnInit {
 
   constructor(private router:Router , private cookie:CookieService) {
-    this.logout()
+    this.logout();
+    
+
+
   }
 
   ngOnInit(): void { }
@@ -20,9 +23,18 @@ export class LogoutComponent implements OnInit {
 
  public logout(){
 
-  return this.cookie.delete('Message');
+  // return this.cookie.delete('Message') ;
+  return this.cookie.delete('isLoggedIn');
+
+
 
 }
+
+public setMessage(){
+  return this.cookie.set('isLoggedIn','false')
+}
+
+
 
 
 

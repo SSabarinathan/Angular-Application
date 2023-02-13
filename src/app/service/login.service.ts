@@ -6,42 +6,37 @@ import { CookieService } from 'ngx-cookie-service';
   providedIn: 'root',
 })
 export class LoginService {
-
   public url = 'http://localhost:3000/userDetails';
 
   ///////////////////////////////////////////////////////////
 
-  public newUrl='http://localhost:3000/newUser'
+  public newUrl = 'http://localhost:3000/newUser';
 
+  validator: boolean;
 
-  validator:boolean;
+  constructor(private http: HttpClient, private cookie: CookieService) {}
 
-  constructor(private http: HttpClient,
-    private cookie:CookieService) {}
-
-    public addUser(data: String) {
-      return this.http.post(`${this.url}`, data);
-    }
-
-
-
-  public newUser(data:any){
-    return this.http.get(`${this.newUrl}`, data)
+  public addUser(data: String) {
+    return this.http.post(`${this.url}`, data);
   }
 
+  public newUser(data: any) {
+    return this.http.get(`${this.newUrl}`, data);
+  }
 
-  public login=()=>{
-    if(this.user()){
+  public login = () => {
+    if (this.user()) {
       return true;
-     }
-    else{
+    } else {
       return false;
     }
+  };
+  public user() {
+
+    // return this.cookie.get('Message');
+    return this.cookie.get('isLoggedIn');
+
+
+
   }
-  public user(){
-  return this.cookie.get('Message');
-
-
- }
-
 }

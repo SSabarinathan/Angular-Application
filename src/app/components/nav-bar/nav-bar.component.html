@@ -4,7 +4,8 @@
   <li><a  class="home" routerLink="cart">Cart</a></li>
   <li><a  class="home" routerLink="offer">Offer</a></li>
   <li *ngIf="!login.user()" class="login home" ><a routerLink="login">Login</a></li>
-  <li *ngIf="login" class="login home"><a routerLink="logout">Logout</a></li>
+  <li *ngIf="login.user()" class="login home"><a routerLink="logout">Logout</a></li>
+
   <li ></li>
 
 </div>

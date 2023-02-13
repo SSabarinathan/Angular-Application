@@ -125,6 +125,9 @@ export class ItemListComponent implements OnInit {
   }
 
   private checkLoginStatus() {
-    return this.cookie.get('Message');
+    // return this.cookie.get('Message');
+    return this.cookie.get('isloggedIn')
+
+
   }
 }

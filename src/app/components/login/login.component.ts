@@ -11,6 +11,7 @@ import { SignupService } from '../../service/signup.service';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
+
   form: FormGroup;
   cookieValue: string;
 
@@ -20,9 +21,22 @@ export class LoginComponent implements OnInit {
     private formBuilder: FormBuilder,
     private router: Router,
     private cookie: CookieService
-  ) {}
+  ) {
+
+  }
 
   ngOnInit(): void {
+
+    // if (this.cookie.get('Message'))
+    if (this.cookie.get('isLoggedIn'))
+
+    {
+      this.router.navigate(['/items/mobile']);
+    }
+
+
+
+
     this.form = this.formBuilder.group({
       text: [null, [Validators.required, Validators.minLength(6)]],
       password: [
@@ -31,7 +45,10 @@ export class LoginComponent implements OnInit {
           Validators.required,
           Validators.minLength(8),
           Validators.pattern(
-            /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])/),  ],],
+            /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])/
+          ),
+        ],
+      ],
     });
   }
   public OnSubmit() {
@@ -40,38 +57,44 @@ export class LoginComponent implements OnInit {
       this.loginService.addUser(this.form.value).subscribe({
         next: (res) => {
           this.login();
-          this.cookie.set('Message', 'DataSuccessfullySubmitted!!');
-          this.router.navigate(['/items/mobile']);
+
+          // const isValid=true;
+          // const result = isValid? 'True':'False';
+          // this.cookie.set('value',result)
 
 
-          },
+          this.cookie.set('isLoggedIn', 'true') ;
+
+
+          // this.cookie.set('Message','DataStored ');
+
+          // this.router.navigate(['/items/mobile']) ;
+
+        },
       });
     }
   }
 
-  public login(){
-    this.signupService.newDataCheck().subscribe((res:any)=>{
-      const user=res.find((a:any)=>{
-      return a.text===this.form.value.text && a.password===this.form.value.password;
-   })
-      if(user){
+  public login() {
+    this.signupService.newDataCheck().subscribe((res: any) => {
+      const user = res.find((a: any) => {
+        return ( a.text === this.form.value.text && a.password === this.form.value.password
+        );
+      });
+      if (user)  {
         this.router.navigate(['/items/mobile']);
-      }
-      else{
-        this.router.navigate(['login'])
 
+      } else {
+        this.router.navigate(['login']);
       }
-    })
+
+
+    });
   }
 
   public signup() {
     this.router.navigate(['signup']);
-
-   }
-
-   
-
-
+  }
 }
 
 
@@ -90,18 +113,29 @@ export class LoginComponent implements OnInit {
 
 
 
- // if (this.form.valid) {
-      //   this.signupService.newDataCheck().subscribe((res: any) => {
-      //     const user = res.find((a: any) => {
-      //       return (a.text === this.form.value.text && a.password === this.form.value.password
-      //       );
-      //     });
-      //     console.log(user);
 
-      //     if (user) {
-      //       this.router.navigate(['/items/mobile']);
-      //     } else {
-      //       this.router.navigate(['login']);
-      //     }
-      //   });
-      // }
+
+
+
+
+
+
+
+
+
+
+// if (this.form.valid) {
+//   this.signupService.newDataCheck().subscribe((res: any) => {
+//     const user = res.find((a: any) => {
+//       return (a.text === this.form.value.text && a.password === this.form.value.password
+//       );
+//     });
+//     console.log(user);
+
+//     if (user) {
+//       this.router.navigate(['/items/mobile']);
+//     } else {
+//       this.router.navigate(['login']);
+//     }
+//   });
+// }
