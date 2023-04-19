@@ -11,7 +11,7 @@ export class LogoutComponent implements OnInit {
 
   constructor(private router:Router , private cookie:CookieService) {
     this.logout();
-    
+
 
 
   }
@@ -29,6 +29,8 @@ export class LogoutComponent implements OnInit {
 
 
 }
+
+
 
 public setMessage(){
   return this.cookie.set('isLoggedIn','false')

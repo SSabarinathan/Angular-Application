@@ -538,301 +538,31 @@
   ],
   "userDetails": [
     {
-      "text": "sabari",
+      "text": "sabarina",
       "password": "Sabari@123",
       "id": 1
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 2
-    },
-    {
-      "text": "sabari",
-      "password": "sABARI@123",
-      "id": 3
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 4
-    },
-    {
-      "text": "sabarinaa",
-      "password": "Sabari@123",
-      "id": 5
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 6
-    },
-    {
-      "text": "sabbab",
-      "password": "akjhajsh@345YGH",
-      "id": 7
-    },
-    {
-      "text": "sabbab",
-      "password": "akjhajsh@345YGH",
-      "id": 8
-    },
-    {
-      "text": "sabbab",
-      "password": "akjhajsh@345YGH",
-      "id": 9
-    },
-    {
-      "text": "sabbab",
-      "password": "akjhajsh@345YGH",
-      "id": 10
-    },
-    {
-      "text": "sabbab",
-      "password": "akjhajsh@345YGH",
-      "id": 11
-    },
-    {
-      "text": "sabbab",
-      "password": "akjhajsh@345YGH",
-      "id": 12
-    },
-    {
-      "text": "sabbab",
-      "password": "akjhajsh@345YGH",
-      "id": 13
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@1234",
-      "id": 14
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@1234",
-      "id": 15
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@1234",
-      "id": 16
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 17
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 18
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 19
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 20
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 21
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@1234",
-      "id": 22
-    },
-    {
-      "text": "sssaabba",
-      "password": "Sabari@1234",
-      "id": 23
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@1234",
-      "id": 24
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@1234",
-      "id": 25
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 26
-    },
-    {
-      "text": "ssabari",
-      "password": "Sabari@123",
-      "id": 27
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 28
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 29
-    },
-    {
-      "text": "sabarinaaa",
-      "password": "Sabari@123",
-      "id": 30
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 31
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@1234",
-      "id": 32
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 33
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 34
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 35
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 36
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 37
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 38
-    },
-    {
-      "text": "sabarii",
-      "password": "Sabari@123",
-      "id": 39
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 40
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 41
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@1234",
-      "id": 42
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 43
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 44
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@1234",
-      "id": 45
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 46
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 47
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@1234",
-      "id": 48
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@1234",
-      "id": 49
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@1234",
-      "id": 50
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 51
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 52
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@1234",
-      "id": 53
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 54
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 55
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 56
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 57
-    },
-    {
-      "text": "sabari",
-      "password": "Sabari@123",
-      "id": 58
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": 1,
+      "modelname": "Apple-iphone 12",
+      "link": "https://m.media-amazon.com/images/I/31jQ91XUDhS._SY445_SX342_QL70_FMwebp_.jpg",
+      "description": "(Purple color, 6GB, 128GB Internal storage)",
+      "specs": {
+        "color": "Light Purple",
+        "Size": "6GB + 128GB",
+        "Style": "S1"
+      },
+      "cost": 110000,
+      "stock": "available",
+      "quantity": 4
+    }
+  ],
   "newUser": [
     {
-      "text": "sabari",
-      "email": "Sabari@123",
+      "text": "sabarina",
+      "email": "sabari@123",
       "password": "Sabari@123",
       "id": 1
     },
@@ -841,6 +571,12 @@
       "email": "Sabari@123",
       "password": "Sabari@123",
       "id": 2
+    },
+    {
+      "text": "santha",
+      "email": "santha@gmail.com",
+      "password": "Sabari@123",
+      "id": 3
     }
   ]
 }

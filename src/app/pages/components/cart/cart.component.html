@@ -7,14 +7,14 @@
       <div *ngFor="let item of productList" class="card mx-5">
         <div class="text-center">
           <img class="card-img-top" [src]="item.link" alt="Card image cap" />
-        </div>
+        </div><br>
         <div class="card-body">
           <h5 class="card-title">{{ item.modelname }}</h5>
           <h4 class="cost_specifica">
             Price: {{ item.cost | currency : "INR" }}
           </h4>
-          <br />
-          <h4>
+          <!-- <br /> -->
+          <!-- <h4>
             Total price is: {{ item.cost * item.quantity | currency : "INR" }}
           </h4>
           <br />
@@ -27,7 +27,7 @@
               readonly
             />
             <button type="button" (click)="plus(item)">+</button>
-          </div>
+          </div> -->
         </div>
         <div class="buy">
           <button  class="buy_button" type="button"  (click)="buyProduct(item.id)"> Buy Product</button><br />

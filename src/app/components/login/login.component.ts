@@ -36,21 +36,16 @@ export class LoginComponent implements OnInit {
 
 
 
-
     this.form = this.formBuilder.group({
       text: [null, [Validators.required, Validators.minLength(6)]],
       password: [
         null,
-        [
-          Validators.required,
-          Validators.minLength(8),
-          Validators.pattern(
-            /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])/
-          ),
+        [ Validators.required, Validators.minLength(8), Validators.pattern(   /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])/ ),
         ],
       ],
     });
   }
+
   public OnSubmit() {
     console.log(this.form.value);
     if (this.form.valid) {
@@ -58,9 +53,6 @@ export class LoginComponent implements OnInit {
         next: (res) => {
           this.login();
 
-          // const isValid=true;
-          // const result = isValid? 'True':'False';
-          // this.cookie.set('value',result)
 
 
           this.cookie.set('isLoggedIn', 'true') ;

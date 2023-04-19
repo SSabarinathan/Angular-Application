@@ -55,12 +55,14 @@ button{
   background:purple;
   border-radius: 50px;
   border: beige;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 150px;
+  padding-right: 120px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 15px;
   font-weight: 700;
+  position: relative;
+  left:5px;
 
 }
 .remove_button {
@@ -69,8 +71,8 @@ button{
   background: red;
   border-radius: 50px;
   border: beige;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 130px;
+  padding-right: 110px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 15px;
@@ -127,6 +129,7 @@ td {
   padding-left: 80px;
   padding-right: 60px;
 }
+
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .card-deck .card {

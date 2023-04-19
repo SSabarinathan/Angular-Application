@@ -1,4 +1,6 @@
+      <button  type="button"  class="  back_button " (click)="goBack()" > <-Back</button>
 <div id="carouselExampleFade" class="carousel slide carousel-fade home-carousel" data-bs-ride="carousel">
+
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="https://wallpapers.com/images/featured/murjp1nk4lp1idlt.jpg" class="d-block w-100" alt="...">
@@ -27,4 +29,78 @@
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </button>
+
+
+  </div>
+
+
+
+<!-- <div class="goBack">
+  <div >
+
+    <button  type="button"  class="  back_button " (click)="goBack()" > <-Back</button>
+  <label  [ngClass]="{changeBackground: searchText!=''}" class="searchlable" for="search">Search: </label>
+  <input  class="search"  type="search" [(ngModel)]="searchText" (input)="onSearchTextEntered(searchText)" placeholder="You can search here!!" name="search">
+
+  </div>
+
+</div> -->
+
+<div class="card-deck mt-5 full"  >
+  <div *ngFor="let item of data" class="card mx-5"  >
+    <div  *ngIf="searchText===''||item.modelname.toLowerCase().includes(searchText)" >
+    <div [ngClass]="category === 'mobile' ? 'mob-img-container' : 'lap-img-container'"  class="text-center mob" >
+      <img [ngClass]="category === 'laptop' ? 'card-img-lap' : 'card-img-mob'" [src]="item.link" alt="Card image cap"/>
+
+    </div>
+    <div class="card-body"   >
+      <h5 class="card-title" >{{ item.modelname }}</h5>
+      <h3 class="cost_specifica">Price: {{ item.cost | currency : "INR" }}</h3>
+      <h5 *ngIf="item.stock==='available'" class="cost_specifia offer">Flat 30% offer for all products</h5>
+      <p class="card-text">{{ item.description }}</p>
+      <p class="card-text" [ngStyle]="{color : item.stock==='available'? 'green':'red'}" >Stock: {{ item.stock }}</p>
+
+      <div class="d-block">
+        <button *ngIf="item.stock==='available'" class="btn btn-primary cart sample" (click)="addtocart(item)">  Add to cart</button>
+        <button *ngIf="item.stock==='available'" class="btn btn-primary cart buy-btn" (click)="buyProduct(item)" > Buy now </button>
+        <button *ngIf="item.stock==='not available'" class="btn btn-primary cart not-btn">Launching Soon!!</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+<div id="carouselExampleFade" class="carousel slide carousel-fade home-carousel" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <img src="https://wallpapers.com/images/featured/murjp1nk4lp1idlt.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item active">
+        <img src="https://wallpapers.com/images/featured/murjp1nk4lp1idlt.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.apple.com/v/macbook-pro-14-and-16/b/images/overview/hero/intro__ewz1ro7xs14y_large.jpg" class="d-block w-100 " alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://m-cdn.phonearena.com/images/articles/374132-image/s21-ultra-12-pro-max-iphone-samsung-galaxy.jpg" class="d-block w-100 " alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.shopify.com/s/files/1/3103/0230/products/puerco_1535df3e-18c7-475d-ac64-bef5070edfa4_1024x1024@2x.jpg?v=1655384475" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://c4.wallpaperflare.com/wallpaper/535/789/206/new-smartphones-wallpaper-preview.jpg" class="d-block w-100" alt="...">
+      </div>
+
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+
+
   </div>

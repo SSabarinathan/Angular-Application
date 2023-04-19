@@ -1,5 +1,130 @@
-.home-carousel{
-    width: 70%;
-    margin: auto;
+.home-carousel {
+  width: 70%;
+  margin: auto;
+}
 
+/* // */
+
+
+.changeBackground {
+  background-color: orange;
+}
+.card{
+  background-color: lavender;
+}
+
+.offer {
+  color: blueviolet;
+}
+
+.searchlable {
+  position: absolute;
+  left: 1535px;
+  top: 235px;
+  font-weight: 900;
+}
+.search {
+  border-radius: 20px;
+  position: absolute;
+  top: 230px;
+  left: 1600px;
+  background-color: lavender;
+  text-align: center;
+}
+td {
+  padding: 20px;
+}
+.image_size {
+  width: 50%;
+  height: 10%;
+}
+.card-img-mob {
+  height: -webkit-fill-available;
+  width: 60%;
+  border-radius: 20px;
+}
+.card-img-lap {
+  height: 80%;
+  width: 60%;
+}
+.card-deck {
+  margin: 0 -15px;
+}
+.mob-img-container {
+  height: 308px;
+}
+.lap-img-container {
+  height: 195px;
+  padding: inherit;
+  display: flex;
+  justify-content: center;
+}
+.card-deck .card {
+  margin: 0 0 1rem;
+  padding-top: 15px;
+
+  border-radius: 10px;
+}
+.full {
+  padding-left: 200px;
+}
+.back_button {
+  background-color: purple;
+  color: white;
+  width: 90px;
+  border-radius: 50px;
+  border: black;
+  position: relative;
+  left: 50px;
+  top: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 10px;
+}
+.sample {
+  background-color: purple;
+}
+.cart {
+  padding-left: 80px;
+  padding-right: 60px;
+  border-radius: 40px;
+  border: beige;
+  font-weight: 900;
+}
+.btn {
+  width: -webkit-fill-available;
+  margin: 7px;
+  height: 50px;
+}
+
+.buy-btn {
+  background-color: #00cf9f8a;
+  color: rebeccapurple;
+  font-weight: 900;
+}
+.not-btn {
+  background-color: #00cf9f8a;
+  color: orangered;
+  font-weight: 900;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card-deck .card {
+    -ms-flex: 0 0 48.7%;
+    flex: 0 0 48.7%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-deck .card {
+    -ms-flex: 0 0 32%;
+    flex: 0 0 32%;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-deck .card {
+    -ms-flex: 0 0 24%;
+    flex: 0 0 24%;
+  }
 }

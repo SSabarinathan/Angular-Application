@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 
@@ -18,17 +18,20 @@ export class ItemListComponent implements OnInit {
   public category = '';
   searchText: string = '';
 
+
   constructor(
     private pageService: PagesService,
     private router: Router,
     private cartService: CartService,
     private cookie: CookieService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+
   ) {
 
   }
 
   ngOnInit(): void {
+
     this.route.paramMap.subscribe((res) => {
       console.log(res.get('name'));
       if (res.get('name') === 'laptop') {
@@ -126,7 +129,7 @@ export class ItemListComponent implements OnInit {
 
   private checkLoginStatus() {
     // return this.cookie.get('Message');
-    return this.cookie.get('isloggedIn')
+    return this.cookie.get('isLoggedIn');
 
 
   }

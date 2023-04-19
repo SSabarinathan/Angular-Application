@@ -2,24 +2,18 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SignupService {
   public url = 'http://localhost:3000/newUser';
 
+  constructor(private http: HttpClient) {}
 
-  constructor( private http:HttpClient) {  {
-
-  }}
-
- public newUser(userData:string){
-    return this.http.post(`${this.url}`, userData)
+  public newUser(userData: string) {
+    return this.http.post(`${this.url}`, userData);
   }
 
-
- public newDataCheck(){
-  return this.http.get(`${this.url}`)
-}
-
-
+  public newDataCheck() {
+    return this.http.get(`${this.url}`);
+  }
 }
