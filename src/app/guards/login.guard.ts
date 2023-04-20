@@ -9,7 +9,9 @@ export class LoginGuard implements CanActivate {
   constructor(private router: Router, private cookie: CookieService) {}
 
   canActivate(): boolean {
-    if (this.cookie.get('isLoggedIn'))
+    // if (this.cookie.get('isLoggedIn'))
+        if (this.cookie.get('Token'))
+
 
 
      {

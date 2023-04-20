@@ -4,6 +4,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
+import {  HTTP_INTERCEPTORS } from '@angular/common/http';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +22,7 @@ import { LogoutComponent } from './components/logout/logout.component';
 import { BuyComponent } from './components/buy/buy.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { RemoveCartComponent } from './components/remove-cart/remove-cart.component';
+import { AuthInterceptor } from './auth.interceptor';
 
 
 @NgModule({
@@ -48,7 +51,11 @@ import { RemoveCartComponent } from './components/remove-cart/remove-cart.compon
         MatDialogModule
 
     ],
-    // providers: [CookieService],
+    // providers: [AuthInterceptor ],
+
+    // providers:[    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
+
+
     bootstrap: [AppComponent],
 })
 export class AppModule { }

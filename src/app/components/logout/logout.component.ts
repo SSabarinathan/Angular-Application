@@ -23,8 +23,9 @@ export class LogoutComponent implements OnInit {
 
  public logout(){
 
-  // return this.cookie.delete('Message') ;
-  return this.cookie.delete('isLoggedIn');
+  // return this.cookie.delete('isLoggedIn');
+    return this.cookie.delete('Token');
+
 
 
 
@@ -33,7 +34,11 @@ export class LogoutComponent implements OnInit {
 
 
 public setMessage(){
-  return this.cookie.set('isLoggedIn','false')
+
+  // return this.cookie.set('isLoggedIn','false')
+    // return this.cookie.set('Token','false')
+
+
 }
 
 

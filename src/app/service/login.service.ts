@@ -33,8 +33,10 @@ export class LoginService {
   };
   public user() {
 
-    // return this.cookie.get('Message');
-    return this.cookie.get('isLoggedIn');
+    // return this.cookie.get('isLoggedIn');
+        return this.cookie.get('Token');
+
+
 
 
 

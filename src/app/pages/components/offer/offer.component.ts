@@ -145,8 +145,9 @@ export class OfferComponent implements OnInit {
   }
 
   private checkLoginStatus() {
-    // return this.cookie.get('Message');
-    return this.cookie.get('isLoggedIn');
+    // return this.cookie.get('isLoggedIn');
+        return this.cookie.get('Token');
+
 
 
   }
