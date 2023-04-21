@@ -24,16 +24,9 @@ export class LoginComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-
     // if (this.cookie.get('isLoggedIn')) {
-          if (this.cookie.get('Token')) {
-
-
+    if (this.cookie.get('Token')) {
       this.router.navigate(['/items/mobile']);
-      //       this.router.navigate(['/cart']);
-      //             this.router.navigate(['/items/laptop']);
-
-
     }
 
     this.form = this.formBuilder.group({
@@ -55,16 +48,15 @@ export class LoginComponent implements OnInit {
     console.log(this.form.value);
     if (this.form.valid) {
       this.loginService.addUser(this.form.value).subscribe({
-        next: (res:any) => {
-          console.log('res', res);
-
-          this.login();
-
-
-          this.cookie.set('Token', res.token );
-
+        next: (res: any) => {
+          this.cookie.set('Token', res.token);
           // this.cookie.set('isLoggedIn', 'true');
-          this.router.navigate(['/items/mobile']) ;
+          this.router.navigate(['/items/mobile']);
+        },
+        error: (err: any) => {
+          if (err.status === 401) {
+              err("Unauthorized response")
+          }
         },
       });
     }
@@ -81,15 +73,17 @@ export class LoginComponent implements OnInit {
       if (user) {
         this.router.navigate(['/items/mobile']);
       } else {
-        this.router.navigate(['login']);
+        this.router.navigate(['/signup']);
       }
     });
   }
 
   public signup() {
-    this.router.navigate(['signup']);
+    this.router.navigate(['/signup']);
   }
 }
+
+// public login(){
 
 // if (this.form.valid) {
 //   this.signupService.newDataCheck().subscribe((res: any) => {
@@ -105,4 +99,5 @@ export class LoginComponent implements OnInit {
 //       this.router.navigate(['login']);
 //     }
 //   });
+// }
 // }

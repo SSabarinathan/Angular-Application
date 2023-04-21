@@ -6,7 +6,7 @@ import { CookieService } from 'ngx-cookie-service';
   providedIn: 'root',
 })
 export class LoginService {
-  public url = 'http://localhost:3000/userDetails';
+  public url = 'http://localhost:3000/login';
 
   ///////////////////////////////////////////////////////////
 

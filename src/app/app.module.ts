@@ -53,7 +53,7 @@ import { AuthInterceptor } from './auth.interceptor';
     ],
     // providers: [AuthInterceptor ],
 
-    // providers:[    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
+    providers:[    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
 
 
     bootstrap: [AppComponent],
