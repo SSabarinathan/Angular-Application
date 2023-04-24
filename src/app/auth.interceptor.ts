@@ -8,14 +8,13 @@ import {
 import { Observable } from 'rxjs';
 import { CookieService } from 'ngx-cookie-service';
 
-
-
 @Injectable()
 export class AuthInterceptor implements HttpInterceptor {
-  constructor(
-    private cookie: CookieService
-  ) {}
-  intercept( request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+  constructor(private cookie: CookieService) {}
+  intercept(
+    request: HttpRequest<any>,
+    next: HttpHandler
+  ): Observable<HttpEvent<any>> {
     const token = this.cookie.get('Token');
 
     if (token) {
@@ -29,13 +28,3 @@ export class AuthInterceptor implements HttpInterceptor {
     return next.handle(request);
   }
 }
-
-
-// const currentUser= this.loginGuard.canActivate();
-// if (token && currentUser) {
-//     request = request.clone({
-//         setHeaders: {
-//             Authorization: `Bearer ${token}`
-//         }
-//     });
-// }

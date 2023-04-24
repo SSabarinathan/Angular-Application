@@ -49,6 +49,7 @@ export class LoginComponent implements OnInit {
     if (this.form.valid) {
       this.loginService.addUser(this.form.value).subscribe({
         next: (res: any) => {
+          // this.login()
           this.cookie.set('Token', res.token);
           // this.cookie.set('isLoggedIn', 'true');
           this.router.navigate(['/items/mobile']);
@@ -83,21 +84,4 @@ export class LoginComponent implements OnInit {
   }
 }
 
-// public login(){
 
-// if (this.form.valid) {
-//   this.signupService.newDataCheck().subscribe((res: any) => {
-//     const user = res.find((a: any) => {
-//       return (a.text === this.form.value.text && a.password === this.form.value.password
-//       );
-//     });
-//     console.log(user);
-
-//     if (user) {
-//       this.router.navigate(['/items/mobile']);
-//     } else {
-//       this.router.navigate(['login']);
-//     }
-//   });
-// }
-// }
